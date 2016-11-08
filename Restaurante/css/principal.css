@@ -5,7 +5,7 @@
 */
 body{
 	font-size: 100%; 
-	background-image: url("../imagenes/fondo2.jpg");	/*De la manga compa*/
+	background-image: url("../img/fondo2.jpg");	/*De la manga compa*/
 	background-repeat: repeat-y;	 /* Background image repite por el eje y */
 	background-attachment: fixed;	/* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
 	background-size: cover;	 /* This is what makes the background image rescale based on the container's size */
@@ -77,7 +77,7 @@ a:hover{
 	background: rgba(255, 144, 0, 0.3);
 }
 .contenedor .img1{
-	background: url("../imagenes/steak1.jpg") no-repeat;
+	background: url("../img/steak1.jpg") no-repeat;
   	background-size:contain;
   	position: absolute;
   	/*border-radius: 50%;*/
@@ -141,7 +141,7 @@ a:hover{
 }
 
 .contenedor .logo{
-	background: url("../imagenes/Logo.png");
+	background: url("../img/Logo.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
