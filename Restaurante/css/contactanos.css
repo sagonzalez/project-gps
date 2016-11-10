@@ -1,0 +1,255 @@
+body{
+    font-size: 100%;
+    background-image: url("../img/fondo2.jpg");	/*De la manga compa*/
+    background-repeat: repeat-y;	 /* Background image repite por el eje y */
+    background-attachment: fixed;	/* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
+    background-size: cover;	 /* This is what makes the background image rescale based on the container's size */
+    background-color: #464646;	/* Set a background color that will be displayed while the background image is loading */
+}
+li {
+    float: left;	/*los pone a la izq horizontalmente*/
+    font-size: medium;
+}
+
+li a {
+    display: block;	/*la menera en que se ven los items, como bloques*/
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;	/*quita el subrayado del enlace*/
+}
+
+.menu_principal{
+    /*margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 0px;
+      margin-bottom: 200px;*/
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    /*opacity: 0.5;*/
+}
+
+.menus {
+    list-style-type: none;	/*le quita el estilo que pueda tener por eso que son listas*/
+    margin: auto;
+    padding: 0;
+    overflow: hidden;	/*specifies what to do if the content of an element exceeds the size of the element's box.*/
+    background-color: #333;	/*color de fondo */
+}
+.menus li > ul{
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 140px;
+    background: #333;
+}
+.menus li:hover > ul{
+    display: block;
+}
+
+/*a:hover:not(.active) {	/*no cambia .active
+
+    background-color: #111;
+    background: #4CAF50;
+}*/
+a:hover{
+    background: #4CAF50;
+}
+/*.content_platillos{
+	margin: auto;
+	margin-top: 50px;
+	height: 500px;
+	/*background: #CC9933;
+	opacity: 0.3;
+}*/
+.contenedor{
+    margin-top: 50px;
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.contenedor .img1{
+    background: url("../img/steak1.jpg") no-repeat;
+    background-size:contain;
+    position: absolute;
+    /*border-radius: 50%;*/
+    border-radius: 10px;
+    /*background-attachment: fixed;
+    background-size: cover;*/
+    width: 300px;
+    height: 400px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.contenedor .img1:hover{
+    cursor: pointer;
+}
+.contenedor .img1_descrip{
+    color: white;
+    text-align: justify;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 10px;
+}
+
+
+.bienvenido{
+    top: 100px;
+    left: 330px;
+    text-align: center;
+    position: absolute;	/*absolute, fixed, relative*/
+    color: white;
+}
+hr {
+    border-top: 3px solid #ffffff;/*#4bceb4;*/
+    border-bottom: 2px dashed #ffffff;/*#4bceb4;*/
+    border-left:none;
+    border-right:none;
+    height: 6px;
+}
+.especial_hoy{
+    position: absolute;
+    color: white;
+    top:115px;
+    left: 830px;
+    background: rgba(200, 54, 54, 0.5)/*rgba(3,3,3,0.6)*/;
+}
+
+.contenedor .img2{
+    background: url("http://blog.plated.com.s3.amazonaws.com/2013/06/Steak-Meat-Beef-Tomato-Grilled-Seared-Rosemary.jpg") no-repeat;
+    background-size:contain;
+    /*border-radius: 50%;*/
+    border-radius: 10px;
+    /*background-attachment: fixed;
+    background-size: cover;*/
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    left: 1025px;
+    top: 120px;
+}
+.contenedor .img2:hover{
+    cursor: pointer;
+}
+
+.contenedor .logo{
+    background: url("../img/Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 260px;
+    height: 360px;
+    left: 430px;
+    top:235px;
+}
+
+.contenedor_abajo{
+    margin-top: 50px;
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.contenedor_abajo .text_destacados{
+    position: absolute;
+    color: white;
+    top:450px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5)/*rgba(3,3,3,0.6)*/;
+}
+.contenedor_abajo .destacado1{
+    background: url("https://vokrugsveta.ua/wp-content/uploads/2016/05/stack1.jpg") no-repeat;
+    background-size:contain;
+    border-radius: 50%;
+    /*border-radius: 10px;*/
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 20px;
+    top: 540px;
+}
+.contenedor_abajo .destacado1:hover{
+    cursor: pointer;
+}
+.contenedor_abajo .destacado1 .text_destacado1{
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    position: absolute;
+    font-size: medium;
+    left: 220px;
+}
+
+.contenedor_abajo .destacado2{
+    background: url("http://previews.123rf.com/images/nilswey/nilswey1406/nilswey140600392/29487838-Plato-saludable-de-carnes-mixtas-incluyendo-carnes-a-la-parrilla-pollo-empanado-crujiente-y-la-carne-Foto-de-archivo.jpg") no-repeat;
+    background-size:contain;
+    border-radius: 50%;
+    /*border-radius: 10px;*/
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 340px;
+    top: 540px;
+}
+.contenedor_abajo .destacado2:hover{
+    cursor: pointer;
+}
+.contenedor_abajo .destacado2 .text_destacado2{
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    position: absolute;
+    font-size: medium;
+    left: 220px;
+}
+
+.contenedor_abajo .destacado3{
+    background: url("https://cdn-enterprise.discourse.org/turtlerock/uploads/default/original/3X/3/7/372f1e345093f86f16edc19d01fc8db635cf037c.jpg") no-repeat;
+    background-size:contain;
+    border-radius: 50%;
+    /*border-radius: 10px;*/
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 670px;
+    top: 540px;
+}
+.contenedor_abajo .destacado3:hover{
+    cursor: pointer;
+}
+.contenedor_abajo .destacado3 .text_destacado3{
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    position: absolute;
+    font-size: medium;
+    left: 220px;
+}
+
+.contenedor_abajo .destacado4{
+    background: url("https://www.glutenfreegigi.com/wp-content/uploads/2013/07/6-Tips-for-Avoiding-Gluten-on-the-Grill.jpg") no-repeat;
+    background-size:contain;
+    border-radius: 50%;
+    /*border-radius: 10px;*/
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 1000px;
+    top: 540px;
+}
+.contenedor_abajo .destacado4:hover{
+    cursor: pointer;
+}
+.contenedor_abajo .destacado4 .text_destacado4{
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    position: absolute;
+    font-size: medium;
+    left: 220px;
+}
+
+/* Contactanos */
