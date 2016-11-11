@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228dc3b0-5a49-4e74-8b5f-de75ad2f300e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restaurante/Contactanos.html" afterPath="$PROJECT_DIR$/Restaurante/Contactanos.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restaurante/css/contactanos.css" afterPath="$PROJECT_DIR$/Restaurante/css/contactanos.css" />
     </list>
@@ -26,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Contactanos.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Contactanos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Restaurante/Contactanos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactanos.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contactanos.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Restaurante/css/contactanos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="254" column="17" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -68,8 +69,8 @@
         <option value="$PROJECT_DIR$/Restaurante/PlatillosFuertes.html" />
         <option value="$PROJECT_DIR$/Restaurante/Postres.html" />
         <option value="$PROJECT_DIR$/Restaurante/Reservaciones.html" />
-        <option value="$PROJECT_DIR$/Restaurante/css/contactanos.css" />
         <option value="$PROJECT_DIR$/Restaurante/Contactanos.html" />
+        <option value="$PROJECT_DIR$/Restaurante/css/contactanos.css" />
       </list>
     </option>
   </component>
@@ -197,7 +198,7 @@
       <workItem from="1478821358802" duration="667000" />
       <workItem from="1478822067555" duration="49000" />
       <workItem from="1478822119277" duration="48000" />
-      <workItem from="1478822224281" duration="1326000" />
+      <workItem from="1478822224281" duration="2085000" />
     </task>
     <task id="LOCAL-00001" summary="Cambiando titulo">
       <created>1478648352850</created>
@@ -238,7 +239,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9234000" />
+    <option name="totallyTimeSpent" value="9993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -376,18 +377,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Restaurante/css/contactanos.css">
+    <entry file="file://$PROJECT_DIR$/Restaurante/Contactanos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+        <state relative-caret-position="151">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Restaurante/Contactanos.html">
+    <entry file="file://$PROJECT_DIR$/Restaurante/css/contactanos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="254" column="17" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
           <folding />
         </state>
       </provider>

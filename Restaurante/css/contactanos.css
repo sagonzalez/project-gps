@@ -253,3 +253,28 @@ hr {
 }
 
 /* Contactanos */
+
+
+.contenedor-divs{
+    margin:30px;
+}
+
+.mapa{
+    float: left;
+}
+
+.info-ubicacion{
+    background: rgba(0,0,0,0.5);
+    float: right;
+    width:500px;
+    height:400px;
+    padding:30px;
+    font-size: x-large;
+    color: white;
+
+}
+
+.info-ubicacion div{
+
+    margin: 20px;
+}
