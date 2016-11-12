@@ -256,6 +256,7 @@ a:hover{
 .contenedor-info{
 
 	margin: 20px;
+	 overflow: auto;
 
 }
 .img-evento{
@@ -283,8 +284,8 @@ a:hover{
 .info-evento div{
 
 	margin:15px;
-
 	color: white;
+	padding-left: 10px;
 	font-weight: bold;
 	font-size: 20px;
 }
