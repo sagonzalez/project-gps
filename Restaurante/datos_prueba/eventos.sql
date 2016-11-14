@@ -1,0 +1,10 @@
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(1,"Martes Familiar","ven con tu familia y disfruta del 2x1 en cualquier platillo",'2016-11-09');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(2,"Lunes de buffet","Aprovecha del alimento que quieras de este dia",'2016-11-14');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(3,"Miercoles musical","Ven y disfruta de la musica con tu comida preferida",'2016-11-15');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(4,"Jueves Amigos","Ven con tus amigos y aprovechen de la barra y alitas de la casa",'2016-11-17');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(5,"Viernes Party","Ven a la noche de antro en compañia de tus amigos y comida preferida",'2016-11-21');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(6,"Sabado Dance","Ven con tus pareja y disfruten del baile y su comida favorita",'2016-11-23');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(7,"Domingo Relax","Ven a disfrutar de tu comida preferida, con postres al 2x1",'2016-11-25');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(8,"Lunes Promocion","Promocion que no te puedes perder, pack del 2x1 en todo platillo y bebidas",'2016-11-27');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(9,"Miercoles de Estreno","Ven a disfrutar del nuevo platillo y postre: Pay de limon",'2016-11-28');
+insert into Eventos(idEventos,Titulo,Descripcion,Fecha) values(10,"Jueves Musical","ven con tus amigos a disfrutar del show de los Jonys",'2016-11-30');
