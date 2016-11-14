@@ -125,3 +125,13 @@ a:hover{
     border:2px solid darkred;
 
 }
+
+.div-agregar-comentario textarea{
+    border: 5px solid darkred;
+    border-radius: 2em;
+}
+
+.primeros-campos{
+
+    margin: 15px;
+}
