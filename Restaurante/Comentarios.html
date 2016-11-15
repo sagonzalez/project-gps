@@ -47,20 +47,22 @@
     <div class="div-agregar-comentario">
 
         <div class="primeros-campos">
-            <label>Nombre: </label><input type="text" id="camponombre" required>
-            <label>Email: </label><input type="text" id="campoemail" required>
-        </div>
-
-        <div>
-            <Label>Agregar comentario: </Label>     <button id="btnCommentario">+</button>
-        </div>
+            <label>Déjanos tu comentario! </label>
+            <br>
+            <br>
+            <input type="text" id="camponombre" required placeholder="Escribe tu nombre">
+            <br>
+            <br>
+        </div>        
         
-        <textarea required id = "campo-comentario" cols="100" rows="2"></textarea>
+        <textarea required id = "campo-comentario" cols="47" rows="10" placeholder="Escríbenos!... Leemos todos tus comentarios"></textarea>
+        <br>
+        <button id="btnCommentario">Enviar</button>
        
     </div>
 </form>
 
-<div class="lista-comentarios">
+<div class="lista-comentarios" overflow="auto">
 
 
     <ul id="lista">

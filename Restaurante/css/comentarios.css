@@ -7,15 +7,15 @@ body{
     font-size: 100%;
 }
 li {
-    float: left;	/*los pone a la izq horizontalmente*/
+    float: left;    /*los pone a la izq horizontalmente*/
     font-size: medium;
 }
 
 li a {
-    display: block;	/*la menera en que se ven los items, como bloques*/
+    display: block; /*la menera en que se ven los items, como bloques*/
     color: white;
     padding: 15px 20px;
-    text-decoration: none;	/*quita el subrayado del enlace*/
+    text-decoration: none;  /*quita el subrayado del enlace*/
 }
 .img{
     display: block;
@@ -33,11 +33,11 @@ li a {
 }
 
 .menus {
-    list-style-type: none;	/*le quita el estilo que pueda tener por eso que son listas*/
+    list-style-type: none;  /*le quita el estilo que pueda tener por eso que son listas*/
     margin: auto;
     padding: 0;
-    overflow: hidden;	/*specifies what to do if the content of an element exceeds the size of the element's box.*/
-    background-color: #333;	/*color de fondo */
+    overflow: hidden;   /*specifies what to do if the content of an element exceeds the size of the element's box.*/
+    background-color: #333; /*color de fondo */
 }
 .menus li > ul{
     list-style: none;
@@ -52,7 +52,7 @@ li a {
     display: block;
 }
 
-/*a:hover:not(.active) {	/*no cambia .active
+/*a:hover:not(.active) {    /*no cambia .active
 
     background-color: #111;
     background: #4CAF50;
@@ -70,19 +70,23 @@ a:hover{
     z-index: -1;
 }
 /*.active {
-	background-color:#4CAF50;
+    background-color:#4CAF50;
 }*/
 
 .lista-comentarios{
-    background: rgba(0,0,0,0.3);
-    padding:50px;
+   /* height: 400px;*/
+    width: 800px;
+    background: rgba(0,0,0,0.2);
+    margin-top: 20px;
+    float: right;
+    position: relative;
 }
 .lista-comentarios li{
 
     float: none;
     list-style-type: none;
-    color: antiquewhite;
-    font-size: xx-large;
+    color: white;
+    font-size: x-large;
     font-weight: bold;
     border: 3px solid darkred;
     border-radius: 2em;
@@ -91,49 +95,47 @@ a:hover{
 }
 
 .div-agregar-comentario{
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.2);
+    margin-top: 20px;
+    float: left;
+}
+
+.primeros-campos label{
+    font-size: 20px;
+    color: white;
     text-align: center;
-    margin: 0;
-
 }
-
-.div-agregar-comentario label{
-    color:antiquewhite;
-    margin: 10px;
-    font-size: x-large;
-    font-weight: bold;
-
-}
-
 .div-agregar-comentario input{
-
-    width: 300px;
-    height: 25px;
-    border: 5px solid darkred;
-    border-radius: 1em;
+    width: 440px;
+    height: 30px;
+    font-size: medium;
 }
 
 .div-agregar-comentario button{
 
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    color: darkblue;
-    font-size: xx-large;
-    font-weight: bold;
-    border-radius: 4em;
-    border:2px solid darkred;
-
+    background-color: #333; /* Green */
+    border: solid black;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    float: right;
+    margin-top: 10px;
+}
+.div-agregar-comentario button:hover{
+    background: #4CAF50;
+    cursor: pointer;
 }
 
 .div-agregar-comentario textarea{
-    border: 5px solid darkred;
     font-size: large;
     border-radius: 1px;
+    margin-left: 20px;
 }
 
 .primeros-campos{
 
-    margin: 15px;
+    margin: 20px;
 }
