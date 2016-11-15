@@ -7,9 +7,9 @@
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> 
 </head>
 <body>
-<!-- 	<div>
-		<img class="img" src="img/Logo_edt.png">
-	</div> -->
+<!--    <div>
+        <img class="img" src="img/Logo_edt.png">
+    </div> -->
 
 <div class="menu_principal">
     <ul class="menus">
