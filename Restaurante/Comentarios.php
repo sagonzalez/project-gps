@@ -66,12 +66,23 @@
 
 
     <ul id="lista">
-        <li>Muy buena comida, recomendada</li>
-        <li>Buena atención y la comida tambien muy rica</li>
-        <li>Muy rico el estofado y los cortes</li>
-        <li>Buenos alimentos y cocteles tambien</li>
-        <li>Deliciosos cortes de carne, recomendado</li>
-        <li>Prueben la pizza recomandada</li>
+    <?php
+
+        include 'php/conexion_datos.php';
+
+        $con = new Conect();
+
+        $comentarios = $con->getComentarios();
+
+        while($registro = $comentarios->fetch_assoc()){
+
+            echo "
+                <li>".$registro['Comentario']."</li>";
+            
+        }
+        
+    ?>
+        
     </ul>
 
 

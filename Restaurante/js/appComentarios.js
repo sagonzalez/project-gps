@@ -9,7 +9,7 @@ var main = function () {
 
     var agregar_comentario = function () {
         
-        var $comentario  = $("#campo-comentario").val();
+        var $comentario  = $("#campocomentario").val();
 
         if($comentario != ""){
 
@@ -28,7 +28,7 @@ var main = function () {
     };
 
 
-    $("#campo-comentario").on("keypress",function (event) {
+    $("#campocomentario").on("keypress",function (event) {
         if(event.keyCode==13){
             agregar_comentario();
         }

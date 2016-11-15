@@ -36,37 +36,45 @@
 
     $sql = $var->getEventos();
 
-    while($fila = $sql->fetch_assoc()){
 
-    echo "
+    if(mysqli_num_rows($sql)==0){
+        echo "<script type='text/javascript'>alert('No hay eventos proximos');</script>";
+    }else{
 
-<div>
-    <div class='contenedor-info'>
-        
-        <div class='img-evento'>
-            <img src='https://static1.squarespace.com/static/52d732a2e4b04290350710bf/t/52f3c3ebe4b0e58bc2c28a34/1391707119702/_DSC0351-2.jpg?format=2500w'>
-        </div>
+            while($fila = $sql->fetch_assoc()){
 
-        <div class='info-evento'>
-          
-            <div>
-                <label>".$fila['Titulo']."</label>
-            </div>
+                    echo "
 
-            <div>
-                <label>".$fila['Fecha']."</label>
-            </div>
+                <div>
+                    <div class='contenedor-info'>
+                        
+                        <div class='img-evento'>
+                            <img src='https://static1.squarespace.com/static/52d732a2e4b04290350710bf/t/52f3c3ebe4b0e58bc2c28a34/1391707119702/_DSC0351-2.jpg?format=2500w'>
+                        </div>
 
-            <div>
-                <p align='justify'>
-                <label>".$fila['Descripcion']."</label>
-                </p>
-            </div>
-        </div>
+                        <div class='info-evento'>
+                          
+                            <div>
+                                <label>".$fila['Titulo']."</label>
+                            </div>
 
-    </div>
-</div>";
-  }//while
+                            <div>
+                                <label>".$fila['Fecha']."</label>
+                            </div>
+
+                            <div>
+                                <p align='justify'>
+                                <label>".$fila['Descripcion']."</label>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>";
+                  }//while
+
+    }
+
 ?>
 </body>
 </html>

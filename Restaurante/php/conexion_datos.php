@@ -15,7 +15,7 @@
 
 		private function getConexion(){
 
-			$mysql = new mysqli("localhost","root","root","restaurantdb"); #mandamos los datos para la conexio
+			$mysql = new mysqli("localhost","root","linux123","RestaurantDB"); #mandamos los datos para la conexio
 
 			#verificamos si resulto algun error
 			if($mysql->connect_errno){
@@ -42,6 +42,45 @@
 
 		}//obtenemos la informacion de los eventos proximos del restaurante
 
+		public function setComentario($nombre,$comentario){
+
+			$sql = $this->getConexion();
+			$insert = "insert into Comentarios(Nombre_Per,Comentario)values('".$nombre."','".$comentario."');";
+
+			if($sql->query($insert)){
+				$sql->close();
+				return true;
+			}else{
+				$sql->close();
+				return false;
+			}
+
+		}//insertar un comentario a la base de datos
+
+
+		public function getComentarios(){
+
+			$sql = $this->getConexion();
+
+			$query = "select Comentario from Comentarios;";
+
+			$resultados = $sql->query($query);
+
+			$sql->close();
+
+			return $resultados;
+
+		}//obtener los comentarios de la base de datos
+
+
+		public function getContacto(){
+
+			$sql = $this->getConexion();
+			$query = "select Nombre,Telefono,Telefono2,Email,Direccion,Maps,Horario from Contacto;";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+		}//obetenemos infromación del negocio 
 	}//class
 
 ?>
