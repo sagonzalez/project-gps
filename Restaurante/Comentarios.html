@@ -43,20 +43,19 @@
 <!---->
 
 
-<form action="/obtener" method="POST">
+<form  method="POST">
     <div class="div-agregar-comentario">
 
         <div class="primeros-campos">
             <label>Nombre: </label><input type="text" id="camponombre" required>
             <label>Email: </label><input type="text" id="campoemail" required>
-            <label>Telefono: </label><input type="text" id="campotel" required>
         </div>
 
         <div>
             <Label>Agregar comentario: </Label>     <button id="btnCommentario">+</button>
         </div>
         
-        <textarea id = "campo-comentario" cols="100" rows="5"></textarea>
+        <textarea required id = "campo-comentario" cols="100" rows="2"></textarea>
        
     </div>
 </form>
