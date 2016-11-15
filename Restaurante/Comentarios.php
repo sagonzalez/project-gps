@@ -50,12 +50,12 @@
             <label>Déjanos tu comentario! </label>
             <br>
             <br>
-            <input type="text" id="campo-nombre" required placeholder="Escribe tu nombre">
+            <input type="text" name="camponombre" required placeholder="Escribe tu nombre">
             <br>
             <br>
         </div>        
         
-        <textarea required id = "campo-comentario" cols="47" rows="10" placeholder="Escríbenos!... Leemos todos tus comentarios"></textarea>
+        <textarea required name = "campocomentario" cols="47" rows="10" placeholder="Escríbenos!... Leemos todos tus comentarios"></textarea>
         <br>
         <button id="btnCommentario">Enviar</button>
        

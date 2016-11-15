@@ -22,8 +22,6 @@ var main = function () {
 
             $item.fadeIn(1000);
 
-            $("#campo-comentario").val("");
-
 
 
         }
