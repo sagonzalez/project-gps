@@ -1,16 +1,16 @@
 <?php
 
 	/**
-	* 
+	*
 	*/
 	class Conect
 	{
-		
+
 		function __construct()
 		{
 
 			//echo "Probando constructor";
-			
+
 		}
 
 		private function getConexion(){
@@ -22,7 +22,7 @@
 				echo "Fallo la conexion: "+$mysql->connect_error;
 				exit();
 			}
-			
+
 			//echo "Conexion correcta: ".$mysql->host_info;
 			return $mysql;
 
@@ -33,7 +33,7 @@
 
 			$consulta = "select Titulo,Descripcion,Fecha from Eventos where Fecha >= now()";
 
-			$conectar = $this->getConexion(); 
+			$conectar = $this->getConexion();
 
 			$resultados = $conectar->query($consulta);
 
@@ -80,7 +80,15 @@
 			$resultados = $sql->query($query);
 			$sql->close();
 			return $resultados;
-		}//obetenemos infromación del negocio 
+		}//obetenemos infromación del negocio
+
+		public function setReservacion($nombre,$telefono,$hora,$fecha,$num_per,$email){
+			$sql = $this->getConexion();
+			$query = "insert into Reservaciones(Nombre,Telefono,Hora,Fecha,Num_Personas,Email)values('".$nombre."','".$telefono."','".$hora."','".$fecha."',".$num_per.",'".$email."');";
+			$resultado = $sql->query($query);
+			$sql->close();
+			return $resultado;
+		}//mandar a guardar la reservacion solicitadas
 	}//class
 
 ?>
