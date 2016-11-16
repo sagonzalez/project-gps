@@ -89,6 +89,45 @@
 			$sql->close();
 			return $resultado;
 		}//mandar a guardar la reservacion solicitadas
+
+
+		public function getPlatilloEntradas()
+		{
+			$sql = $this->getConexion();
+			$query = "select Nombre,Descripcion,Costo,Img from Platillo where Tipo_Platillo = 'Entrada';";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+		}//obtenemos los registros de los platillos de entrada
+
+		public function getPlatilloFuertes()
+		{
+			$sql = $this->getConexion();
+			$query = "select Nombre,Descripcion,Sugerencia,Costo,Img from Platillo where Tipo_Platillo = 'Fuerte';";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+		}//obtenemos los registros de los platillos fuertes
+
+		public function getPlatilloPostres()
+		{
+			$sql = $this->getConexion();
+			$query = "select Nombre,Descripcion,Costo,Img from Platillo where Tipo_Platillo = 'Postre';";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+		}//obtenemos los registros de los platillos de postres
+
+		public function getBebidas()
+		{
+			$sql = $this->getConexion();
+			$query = "select Nombre,Descripcion,Costo,Img from Bebidas;";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+		}//obtenemos los registros de los platillos de postres
+
+
 	}//class
 
 ?>
