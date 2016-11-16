@@ -49,7 +49,7 @@
                     <div class='contenedor-info'>
                         
                         <div class='img-evento'>
-                            <img src='https://static1.squarespace.com/static/52d732a2e4b04290350710bf/t/52f3c3ebe4b0e58bc2c28a34/1391707119702/_DSC0351-2.jpg?format=2500w'>
+                            <img src='".$fila['Img']."'>
                         </div>
 
                         <div class='info-evento'>

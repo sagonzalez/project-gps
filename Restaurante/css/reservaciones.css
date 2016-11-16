@@ -62,12 +62,15 @@ a:hover{
 }
 
 input {
-    height: 15px;   
-    width: 40%;
-    padding: 12px 20px;
-    /*margin: 0px 8px;*/
+    height: 30px;   
+    width: 400px;
     margin-left: 20px;
-    /*box-sizing: border-box;*/
+    margin-top: 20px;
+    font-size: large;
+    margin-right: 20px;
+}
+input:last-child{
+    margin-bottom: 60px;
 }
 
 button {
@@ -79,6 +82,8 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin-top: 10px;
+    float: right;
 }
 
 button:hover{
@@ -86,14 +91,35 @@ button:hover{
     cursor: pointer;
 }
 .texto {
-    text-align: left;
-    margin-left: 20px;
-    font-weight: bold;
-    color: white;
+    margin-top:80px
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    background: #333;
+    text-decoration: none;
+}
+.otro_texto{
     font-size: large;
+    color: white;
 }
 
-.datos {
+.datos1 {
     background: rgba(0,0,0,0.3);
-    /*background: rgba(255, 144, 0, 0.2);*/
+    float: left;
+}
+.datos2{
+    background: rgba(0,0,0,0.3);
+    float: right;
+    position: relative;
+}
+.el_div{
+    margin:55px auto;
+    width:95%;
+    min-width:320px;
+    max-width:960px;
 }

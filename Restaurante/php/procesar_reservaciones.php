@@ -16,8 +16,10 @@
 
   if ($conn->setReservacion($nombre,$tel,$hora,$fecha,$num_per,$email)) {
     echo "Reservación Hecha";
+    //header("location: ../Reservaciones.php");
   }else{
     echo "No se realizo la reservacion";
+    //header("location: ../Reservaciones.php");
   }
 
  ?>

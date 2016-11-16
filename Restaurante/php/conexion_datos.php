@@ -31,7 +31,7 @@
 
 		public function getEventos(){
 
-			$consulta = "select Titulo,Descripcion,Fecha from Eventos where Fecha >= now()";
+			$consulta = "select Titulo,Descripcion,Fecha,Img from Eventos where Fecha >= now()";
 
 			$conectar = $this->getConexion();
 

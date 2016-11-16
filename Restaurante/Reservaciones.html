@@ -26,23 +26,25 @@
     </ul>
 </div>
 
-<div class="datos">
-    <p class="texto">Nombre</p>
-<input type="text" name="nomres">
-    <p class="texto">Telefono</p>
-<input type="number">
-
-    <p class="texto">Correo Electronico:</p>
-        <input type="text" name="emailres">
-
-    <p class="texto">Para la fecha:</p>
-    <input  type="date" name="fechares">
-    <p class="texto">Hora</p>
-    <input type="time">
-
-
-    <button type="button">Enviar</button>
-
+<div class="el_div">
+    <p class="texto">FORMULARIO PARA RESERVACIÓN</p>
+    <div class="datos1">
+        <input type="number" placeholder="Número de comensales" min="1" max="20" required> 
+        <br>
+        <input type="text" placeholder="Nombre" required>
+        <br>
+        <input type="tel" placeholder="Teléfono" required>
+        <br>
+        <input type="emial" placeholder="Email">
+    </div>
+    <div class="datos2">
+        <p class="otro_texto">Para la fecha:</p>
+        <input type="date" placeholder="Selecciona una fecha" required>
+        <p class="otro_texto">Hora:</p>
+        <input type="time" required>
+        <br>
+        <button type="button">Enviar</button>
+    </div>
 </div>
 
 </body>

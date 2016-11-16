@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Reservaciones</title>
     <link rel="stylesheet" type="text/css" href="css/reservaciones.css">
-    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> 
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
 </head>
 <body>
 
@@ -26,27 +26,31 @@
     </ul>
 </div>
 
-<form action="php/procesar_reservaciones.php" method="POST">
-
-<div class="datos">
-    <p class="texto">Nombre</p>
-<input type="text" name="nomres" required>
-    <p class="texto">Telefono</p>
-<input type="number" required>
-
-    <p class="texto">Correo Electronico:</p>
-        <input type="text" name="emailres" required>
-
-    <p class="texto">Para la fecha:</p>
-    <input  type="date" name="fechares" required>
-    <p class="texto">Hora</p>
-    <input type="time" required>
 
 
-    <button type="button">Enviar</button>
+<div class="el_div">
+    <p class="texto">FORMULARIO PARA RESERVACIÓN</p>
 
+<form action="php/procesar_reservaciones.php" method="post">
+    <div class="datos1">
+        <input type="number" placeholder="Número de comensales" min="1" max="20" required name="num_per">
+        <br>
+        <input type="text" placeholder="Nombre" required name="nombre">
+        <br>
+        <input type="tel" placeholder="Teléfono" required name="telefono">
+        <br>
+        <input type="emial" placeholder="Email" required name="email">
+    </div>
+    <div class="datos2">
+        <p class="otro_texto">Para la fecha:</p>
+        <input type="date" placeholder="Selecciona una fecha" required name="fecha">
+        <p class="otro_texto">Hora:</p>
+        <input type="time" required name="hora">
+        <br>
+        <button>Enviar</button>
+    </div>
 </div>
-
 </form>
+
 </body>
 </html>
