@@ -4,6 +4,7 @@
 	<title>Bistrót</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/slides.css">
 	<link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> 
 </head>
 <body>
@@ -71,33 +72,38 @@
 	</div>
 	</div>
 
-	<div class="contenedor_abajo">
-		<div class="text_destacados">
-			<p><h2>Destacados:</h2></p>
-		</div>
-		<div title="Lorem ipsum dolor sit amet" class="destacado1">
-			<p class="text_destacado1">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			</p>
-		</div>
-		
-		<div title="Lorem ipsum dolor sit amet" class="destacado2">
-			<p class="text_destacado2">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			</p>
-		</div>
+	<div class="slideshow-container" title="Platillos destacados">
+	    <div class="mySlides fade">
+	      <img src="https://vokrugsveta.ua/wp-content/uploads/2016/05/stack1.jpg" style="width:100%">
+	      <div class="text">Un bistecillo</div>
+	    </div>
+	    <div class="mySlides fade">
+	    	<img src="https://cookedere.files.wordpress.com/2015/07/lasagna.jpg" style="width: 100%">
+	    	<div class="text">Tocho morocho!</div>
+	    </div>
 
-		<div title="Lorem ipsum dolor sit amet" class="destacado3">
-			<p class="text_destacado3">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			</p>
-		</div>	
+	    <div class="mySlides fade">
+	      <img src="http://leisureworld.lk/upload/1417931965.jpg" style="width:100%">
+	      <div class="text">Unos pinshes sanguiches</div>
+	    </div>
 
-		<div title="Lorem ipsum dolor sit amet" class="destacado4">
-			<p class="text_destacado4">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			</p>
-		</div>
-	</div>
+	    <div class="mySlides fade">
+	      <img src="https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Food.jpg" style="width:100%">
+	      <div class="text">hmmmm... papá. Me reviento todo! de un vergazo</div>
+	    </div>
+
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  </div>
+
+	<script type="text/javascript" src="js/slides.js"></script>
 </body>
 </html>
