@@ -84,7 +84,7 @@
 
 		public function setReservacion($nombre,$telefono,$hora,$fecha,$num_per,$email){
 			$sql = $this->getConexion();
-			$query = "insert into Reservaciones(Nombre,Telefono,Hora,Fecha,Num_Personas,Email)values('".$nombre."','".$telefono."','".$hora."','".$fecha."',".$num_per.",'".$email."');";
+			$query = "insert into Reservaciones(Nombre,Telefono,Hora,Fecha,Num_Personas,Email,Status)values('".$nombre."','".$telefono."','".$hora."','".$fecha."',".$num_per.",'".$email."',0);";
 			$resultado = $sql->query($query);
 			$sql->close();
 			return $resultado;
