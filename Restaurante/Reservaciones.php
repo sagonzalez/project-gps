@@ -10,19 +10,19 @@
 
 <div class="menu_principal">
     <ul class="menus">
-        <li><a title="INICIO" class="active" href="index.html"> INICIO </a></li>
+        <li><a title="INICIO" class="active" href="index.php"> INICIO </a></li>
         <li><a title="MENÚ"> MENÚ </a>
             <ul>
-                <li><a href="Entradas.html">Entradas</a></li>
-                <li><a href="PlatillosFuertes.html">Plato fuerte</a></li>
-                <li><a href="Postres.html">Postres</a></li>
-                <li><a href="Bebidas.html">Bebidas</a></li>
+                <li><a href="Entradas.php">Entradas</a></li>
+                <li><a href="PlatillosFuertes.php">Plato fuerte</a></li>
+                <li><a href="Postres.php">Postres</a></li>
+                <li><a href="Bebidas.php">Bebidas</a></li>
             </ul>
         </li>
-        <li><a title="EVENTOS" href="Eventos.html"> EVENTOS </a></li>
-        <li><a title="RESERVACIONES" href="Reservaciones.html"> RESERVACIONES </a></li>
-        <li><a title="CONTACTANOS" href="Contactanos.html"> CONTACTANOS </a></li>
-        <li><a title="COMENTARIOS" href="Comentarios.html"> COMENTARIOS </a></li>
+        <li><a title="EVENTOS" href="Eventos.php"> EVENTOS </a></li>
+        <li><a title="RESERVACIONES" href="Reservaciones.php"> RESERVACIONES </a></li>
+        <li><a title="CONTACTANOS" href="Contactanos.php"> CONTACTANOS </a></li>
+        <li><a title="COMENTARIOS" href="Comentarios.php"> COMENTARIOS </a></li>
     </ul>
 </div>
 
