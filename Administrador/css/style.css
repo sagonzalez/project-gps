@@ -1,0 +1,76 @@
+body{
+
+    background-color: whitesmoke;
+    background-image: url("../img/fondo1.png");
+    background-attachment: fixed;;
+    text-align: center;
+}
+
+.div-fondo{
+
+    background-color: whitesmoke;
+    opacity: 0.3;
+
+}
+
+.alinear-form{
+    padding: 200px;
+}
+
+.alinear-1{
+
+    padding: 25px;
+
+}
+
+
+.alinear-1 label{
+
+    color: white;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+
+}
+
+.alinear-1 input{
+    border: 2px solid blue;
+    width: 200px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    font-size: larger;
+
+  }
+
+
+.alinear-2{
+    padding:50px;
+}
+.alinear-2 button{
+
+    background-color: blue;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    width: 250px;
+    height: 50px;
+    border: 2px solid darkgreen;
+
+}
+
+
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: darkgreen;
+}
