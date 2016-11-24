@@ -75,11 +75,11 @@ a:hover{
 
 .lista-comentarios{
    /* height: 400px;*/
-    width: 800px;
+ 
     background: rgba(0,0,0,0.2);
-    margin-top: 20px;
+    margin: 20px;
     float: right;
-    position: relative;
+    
 }
 .lista-comentarios li{
 
@@ -90,14 +90,16 @@ a:hover{
     font-weight: bold;
     border: 3px solid darkred;
     border-radius: 2em;
-    padding: 5px;
+    padding: 15px;
     margin: 15px;
 }
 
 .div-agregar-comentario{
     background: rgba(0,0,0,0.2);
-    margin-top: 20px;
+    margin: 20px;
     float: left;
+
+
 }
 
 .primeros-campos label{

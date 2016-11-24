@@ -53,14 +53,14 @@
         </div>
 
         ";
-
+        }   
     ?>
 
 </div>
 
-</body>
-
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="js/CodigoJs.js" ></script>
+</body>
+
 
 </html>
