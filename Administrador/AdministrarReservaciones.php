@@ -175,7 +175,31 @@
 
 
   <div class="div-buscar">
+  		<div class="div-titulo-reservacion">
+			<label id='titulo-reservaciones-buscar'>Buscar Reservaciones por fecha</label>
+		</div>
 
+		<form action="php/Procesar_Reservaciones.php" method="post">
+			
+			<div>
+				<label>Ingrese una fecha: </label><input type="date" name="fecha_buscar" required><button name="btn_buscar">Buscar</button>
+			</div>
+
+			<?php 
+
+				if (isset($_POST['btn_buscar'])) {
+					# si se solicito una busqueda
+
+
+
+					
+				}//if
+
+
+			 ?>	
+
+		</form>
+		
   </div>
 </body>
 </html>
