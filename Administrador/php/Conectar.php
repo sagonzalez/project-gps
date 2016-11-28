@@ -98,7 +98,7 @@
 		}
 
 		public function getEventos(){
-			$consulta = "select idEventos,Titulo,Descripcion,Fecha,Img from Eventos where Fecha >= now()";
+			$consulta = "select idEventos,Titulo,Descripcion,Fecha,Img from Eventos where Fecha >= date(now());";
 
 			$conectar = $this->getConexion();
 
@@ -120,7 +120,7 @@
 
 		public function getSolicitudes()
 		{
-			$consulta = "select * from Reservaciones where Fecha >= now() and Status = 0;";
+			$consulta = "select * from Reservaciones where Fecha >= date(now()) and Status = 0;";
 
 			$conectar = $this->getConexion();
 
@@ -132,7 +132,7 @@
 
 		public function getReservacionesHoy()
 		{
-			$consulta = "select * from Reservaciones where Fecha == now() and Status = 1;";
+			$consulta = "select * from Reservaciones where Fecha = date(now()) and Status = 1;";
 
 			$conectar = $this->getConexion();
 
@@ -143,12 +143,31 @@
 		}//
 
 
-		public function setSolicitud($status,$user){
-			$consulta = "update Reservaciones set Status = $status, User = '$user';";
+		public function setSolicitud($status,$user,$id){
+			$consulta = "update Reservaciones set Status = ".$status.", User = ".$user."	 where idReservaciones = ".$id.";";
 			$conectar = $this->getConexion();
 			$resultado = $conectar->query($consulta);
 			$conectar->close();
 			return $resultado;
+		}//
+
+		public function buscarReservacion($fecha){
+			$consulta = "select * from Reservaciones where Fecha = '".$fecha."'";
+			$conectar  = $this->getConexion();
+			$resultado = $conectar->query($consulta);
+			$conectar->close();
+			return $resultado;
+		}//
+
+		public function getIDUser($nombre)
+		{
+			$consulta = "select idUsuarios from Usuarios where name_user = '".$nombre."';";
+			$conectar  = $this->getConexion();
+			$resultado = $conectar->query($consulta);
+			$res = $resultado->fetch_assoc();
+			$id = $res['idUsuarios'];
+			$conectar->close();
+			return $id;
 		}
 	}//class
 

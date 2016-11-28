@@ -139,6 +139,7 @@ a:hover, a:active {
 
   background: rgba(0, 0, 0, 0.5);
   margin: 15px;
+	padding: 20px;
 }
 
 .div-solicitudes{
@@ -154,4 +155,35 @@ a:hover, a:active {
   color: white;
   font-size: x-large;
   font-weight: bold;
+}
+
+.div-buscar{
+	background: rgba(0, 0, 0, 0.5);
+	margin: 15px;
+}
+
+.div-menu{
+
+		text-align: center;
+
+}
+
+.div-menu a{
+  width: 230px;
+  margin: 5px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.div-menu a:link,.div-menu a:visited {
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.div-menu a:hover,.div-menu a:active {
+    background-color: darkblue;
 }

@@ -5,19 +5,23 @@ require 'Conectar.php';
 $conn = new Conectar();
 
 //Si asignamos una nueva reservaciones
-if ($_POST['btn_new']) {
+if (isset($_POST['btn_new'])) {
   #obtenemos el puro id para actualizar su estatus y tambien obtenemos el usuario actualizar
+  echo "string";
   $id = $_POST['id_solicitud'];
   $usr = $_POST['user'];
 
-  if($id == 'Aceptada'){
-    if($conn->setSolicitud(1,$usr)){
+  echo "".$_POST['status_solicitud']."";
+  if($_POST['status_solicitud'] == 'Aceptada'){
+    echo "string2";
+    if($conn->setSolicitud(1,$conn->getIDUser($usr),$id)){
       header("Location: ../AdministrarReservaciones.php");
     }else {
       echo "Error al actualizar1";
     }
-  }elseif ($id == 'Rechazada') {
-    if ($conn->setSolicitud(2,$usr)) {
+
+  }elseif ($_POST['status_solicitud'] == 'Rechazada') {
+    if ($conn->setSolicitud(2,$conn->getIDUser($usr),$id)) {
       header("Location: ../AdministrarReservaciones.php");
     }else {
       echo "Error al actualizar2";
@@ -25,20 +29,19 @@ if ($_POST['btn_new']) {
   }//
 
 }//if btn new
-
-
-if ($_POST['btn_mod']) {
+elseif (isset($_POST['btn_mod'])) {
+  echo "string";
   $id = $_POST['id_solicitud'];
   $usr = $_POST['user'];
 
-  if($id == 'Cancelar'){
-    if($conn->setSolicitud(3,$usr)){
+  if($_POST['status_solicitud'] == 'Cancelar'){
+    if($conn->setSolicitud(3,$conn->getIDUser($usr),$id)){
       header("Location: ../AdministrarReservaciones.php");
     }else {
       echo "Error al cancelar";
     }
-
-}
+  }
+}//
 
 
  ?>
