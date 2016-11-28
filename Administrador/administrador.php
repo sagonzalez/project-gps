@@ -45,7 +45,7 @@
 		</div>
 		<div>
 
-				<a href="">Modificar Menu</a>
+				<a href="Menu.php">Modificar Menu</a>
 		</div>
 		<div>
 			<a href="GestionarEventos.php">Gestionar Eventos</a>
