@@ -132,7 +132,13 @@
 
 		public function getReservacionesHoy()
 		{
-			$consulta = "select * from Reservaciones where Fecha = date(now()) and Status = 1;";
+			$consulta = "
+
+							select r.Nombre,r.Telefono,r.Hora,r.Fecha,r.Num_Personas,r.Email,r.Status,u.Nombre
+				from Reservaciones r,Usuarios u
+				where r.Fecha = date(now()) and r.Status = 1 and r.user = (select idUsuarios from Usuarios where idUsuarios = r.User  );
+
+			";
 
 			$conectar = $this->getConexion();
 
@@ -173,7 +179,7 @@
 		public function getPlatilloEntradas()
 		{
 			$sql = $this->getConexion();
-			$query = "select Nombre,Descripcion,Costo,Img from Platillo where Tipo_Platillo = 'Entrada';";
+			$query = "select idPlatillo,Nombre,Descripcion,Costo,Img from Platillo where Tipo_Platillo = 'Entrada';";
 			$resultados = $sql->query($query);
 			$sql->close();
 			return $resultados;
@@ -182,7 +188,7 @@
 		public function getPlatilloFuertes()
 		{
 			$sql = $this->getConexion();
-			$query = "select Nombre,Descripcion,Sugerencia,Costo,Img from Platillo where Tipo_Platillo = 'Fuerte';";
+			$query = "select idPlatillo,Nombre,Descripcion,Sugerencia,Costo,Img from Platillo where Tipo_Platillo = 'Fuerte';";
 			$resultados = $sql->query($query);
 			$sql->close();
 			return $resultados;
@@ -191,7 +197,7 @@
 		public function getPlatilloPostres()
 		{
 			$sql = $this->getConexion();
-			$query = "select Nombre,Descripcion,Costo,Img from Platillo where Tipo_Platillo = 'Postre';";
+			$query = "select idPlatillo,Nombre,Descripcion,Costo,Img from Platillo where Tipo_Platillo = 'Postre';";
 			$resultados = $sql->query($query);
 			$sql->close();
 			return $resultados;
@@ -200,11 +206,37 @@
 		public function getBebidas()
 		{
 			$sql = $this->getConexion();
-			$query = "select Nombre,Descripcion,Costo,Img from Bebidas;";
+			$query = "select idBebidas,Nombre,Descripcion,Costo,Img from Bebidas;";
 			$resultados = $sql->query($query);
 			$sql->close();
 			return $resultados;
 		}//obtenemos los registros de los platillos de postres
+
+		public function modificarPlatillo($id,$nombre,$img,$descripcion,$costo)
+		{
+
+		}
+
+		public function modificarPlatilloF($id,$nombre,$img,$descripcion,$sugerencia,$costo)
+		{
+
+		}
+
+		public function eliminarPlatillo($id)
+		{
+		}
+
+		public function modificarBebida($id,$nombre,$img,$descripcion,$costo)
+		{
+			# code...
+		}
+
+		public function eliminarBebida($id)
+		{
+			# code...
+		}
+
+
 
 	}//class
 

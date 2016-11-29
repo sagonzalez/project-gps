@@ -164,3 +164,150 @@ p.costo {
         padding: 10px 0;
     }
 }
+
+.menu_principal{
+	/*margin-left: 100px;
+  	margin-right: 100px;
+  	margin-top: 0px;
+  	margin-bottom: 200px;*/
+  	margin: auto;
+  	border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+  	/*opacity: 0.5;*/
+
+
+  	text-align: center;
+  	color: white;
+  	font-size: xx-large;
+}
+
+.menu_principal a{
+  width: 230px;
+  margin: 15px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.menu_principal a:link,.menu_principal a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu_principal a:hover,.menu_principal a:active {
+    background-color: red;
+}
+.titulo{
+  background-color: black;
+  color: white;
+  margin: 15px;
+  font-size: x-large;
+}
+
+.div-titulo{
+  text-align: center;
+  margin: 15px;
+}
+
+.div-titulo a{
+  width: 230px;
+  margin: 15px;
+  padding: 5px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.div-titulo a:link,.div-titulo a:visited {
+    background-color: black;
+    color: white;
+    /*padding: 14px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.div-titulo a:hover,.div-titulo a:active {
+    background-color: red;
+}
+
+.menu-mod label{
+  margin: 15px;
+  font-size: x-large;
+  color: white;
+}
+
+.menu-mod textarea{
+  margin: 15px;
+
+  width: 400px;
+  height: 50px;
+
+}
+
+[name=nombre]{
+  margin: 15px;
+  width: 400px;
+
+}
+
+.menu-mod button{
+  margin: 15px;
+  color: white;
+  background-color: blue;
+  border:1em solid blue;
+  font-size: large;
+}
+
+.menu-mod button:hover{
+  background-color: red;
+    border:1em solid red;
+}
+
+
+.formulario-nuevo{
+
+  background: rgba(0, 0, 0, 0.5);
+  margin: 15px;
+
+  text-align: center;
+}
+
+.formulario-nuevo input{
+  width: 400px;
+  font-size: large;
+
+}
+
+.formulario-nuevo select{
+  margin: 10px;
+  color: white;
+  width: 400px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  font-size: large;
+
+}
+
+.formulario-nuevo textarea{
+  margin: 15px;
+  width: 400px;
+  font-size: large;
+}
+.formulario-nuevo button{
+  margin: 15px;
+  color: white;
+  background-color: blue;
+  border:1em solid blue;
+  font-size: large;
+}
+
+.formulario-nuevo button:hover{
+    background-color: red;
+    border:1em solid red;
+}

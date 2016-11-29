@@ -3,7 +3,7 @@
 <head>
 	<title>Queta's Grill and Steaks</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/principal.css">
+
 	<link rel="stylesheet" type="text/css" href="css/platillos_fuertes.css">
 </head>
 <body>
@@ -12,7 +12,9 @@
 	</div> -->
 
 	<div class="menu_principal">
-		Panel de Control <a href="php/logout.php">Cerrar Sesion</a>
+		<div class="encabezado">
+			Panel de Control <a href="php/logout.php">Cerrar Sesion</a>
+		</div>
 	</div>
 
 	<?php
@@ -34,6 +36,9 @@
 			<a href="#nuevo">Agregar</a>
 		</div>
 
+		<div class="titulo">
+				<label>Platillos de Entrada</label>
+		</div>
 		<?php
 
 			$registros = $conn->getPlatilloEntradas();
@@ -44,11 +49,12 @@
 			    <div class='accordion-container'>
 			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
-			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."'><br> 
-			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen'>".$fila['Img']."</textarea>
+							<input type='hidden' name='id' value='".$fila['idPlatillo']."'>
+			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
+			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen' required >".$fila['Img']."</textarea>
 			               <br>
-			               <label>Descripcion: </label><textarea   name='descrip'  >".$fila['Descripcion']."</textarea><br><br><br><hr>
-			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."'> 
+			               <label>Descripcion: </label><textarea   name='descrip' required >".$fila['Descripcion']."</textarea><br><br><br><hr>
+			               <label>Costo: </label><input type='text' name='costo' required value='".$fila['Costo']."'>
 
 			               <div class='botones'>
 			               		<button name='btn_mod'>Modificar</button>
@@ -60,12 +66,12 @@
 			    </form>
 
 			    ";
+				}
 		?>
 
 	</div>
 
-	<!--	Platillos Fuertes -->
-
+	<!--	Postres -->
 	<div class="menu-mod">
 		<div id="platofuerte" class="div-titulo">
 			<a href="#entradas">Entradas</a>
@@ -74,22 +80,26 @@
 			<a href="#bebidas">Bebidas</a>
 			<a href="#nuevo">Agregar</a>
 		</div>
-
+		<div class="titulo">
+				<label>Platillos Fuerte</label>
+		</div>
 		<?php
+
 			$registros = $conn->getPlatilloFuertes();
 
-				  while ($fila = $registros->fetch_assoc()) {
+			while ($fila = $registros->fetch_assoc()) {
 			    echo "
 			    <form action='php/Procesar_Menu.php' method='post'>
 			    <div class='accordion-container'>
 			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
-			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."'><br> 
-			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen'>".$fila['Img']."</textarea>
+								<input type='hidden' name='id' value='".$fila['idPlatillo']."'>
+			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
+			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen' required >".$fila['Img']."</textarea>
 			               <br>
-			               <label>Descripcion: </label><textarea   name='descrip'  >".$fila['Descripcion']."</textarea><br><br><br><hr>
-			               <label>Sugerencia: </label><textarea name='suge'>".$fila['Sugerencia']."<br>
-			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."'> 
+			               <label>Descripcion: </label><textarea   name='descrip'  required >".$fila['Descripcion']."</textarea><br><br><br>
+										 <label>Sugerencia: </label><textarea   name='suger' required >".$fila['Sugerencia']."</textarea><br><br><br><hr>
+			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."' required >
 
 			               <div class='botones'>
 			               		<button name='btn_mod_pf'>Modificar</button>
@@ -101,10 +111,10 @@
 			    </form>
 
 			    ";
+				}
 
 		?>
 	</div>
-
 
 	<!--	Postres -->
 	<div class="menu-mod">
@@ -115,7 +125,9 @@
 			<a href="#bebidas">Bebidas</a>
 			<a href="#nuevo">Agregar</a>
 		</div>
-
+		<div class="titulo">
+				<label>Postres</label>
+		</div>
 		<?php
 
 			$registros = $conn->getPlatilloPostres();
@@ -126,11 +138,12 @@
 			    <div class='accordion-container'>
 			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
-			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."'><br> 
-			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen'>".$fila['Img']."</textarea>
+							<input type='hidden' name='id' value='".$fila['idPlatillo']."'>
+			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
+			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen' required >".$fila['Img']."</textarea>
 			               <br>
-			               <label>Descripcion: </label><textarea   name='descrip'  >".$fila['Descripcion']."</textarea><br><br><br><hr>
-			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."'> 
+			               <label>Descripcion: </label><textarea   name='descrip'  required >".$fila['Descripcion']."</textarea><br><br><br><hr>
+			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."' required >
 
 			               <div class='botones'>
 			               		<button name='btn_mod'>Modificar</button>
@@ -142,6 +155,7 @@
 			    </form>
 
 			    ";
+				}
 
 		?>
 	</div>
@@ -155,7 +169,9 @@
 			<a href="#bebidas">Bebidas</a>
 			<a href="#nuevo">Agregar</a>
 		</div>
-
+		<div class="titulo">
+				<label>Bebidas</label>
+		</div>
 		<?php
 
 			$registros = $conn->getBebidas();
@@ -166,14 +182,15 @@
 			    <div class='accordion-container'>
 			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
-			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."'><br> 
-			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen'>".$fila['Img']."</textarea>
+			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
+								<input type='hidden' name='id' value='".$fila['idBebidas']."'>
+			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen' required >".$fila['Img']."</textarea>
 			               <br>
-			               <label>Descripcion: </label><textarea   name='descrip'  >".$fila['Descripcion']."</textarea><br><br><br><hr>
-			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."'> 
+			               <label>Descripcion: </label><textarea   name='descrip'  required >".$fila['Descripcion']."</textarea><br><br><br><hr>
+			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."' required >
 
 			               <div class='botones'>
-			               		<button name='btn_mod'>Modificar</button>
+			               		<button name='btn_mod_beb'>Modificar</button>
 			               		<button name='btn_del'>Eliminar</button>
 			               </div>
 			        </div>
@@ -182,7 +199,7 @@
 			    </form>
 
 			    ";
-
+				}
 
 		?>
 	</div>
@@ -190,13 +207,47 @@
 
 	<!--	Nuevo Platillo -->
 	<div class="form-nuevo">
-		<div id="entradas" class="div-titulo">
+		<div id="nuevo" class="div-titulo">
 			<a href="#entradas">Entradas</a>
 			<a href="#platofuerte">Plato Fuerte</a>
 			<a href="#postres">Postres</a>
 			<a href="#bebidas">Bebidas</a>
 			<a href="#nuevo">Agregar</a>
 		</div>
+
+		<div class="titulo">
+				<label>Nuevo Platillo</label>
+		</div>
+
+		<form action="php/Procesar_Menu.php" method="post">
+		<div class="formulario-nuevo">
+				<div>
+						<input type="text" name="nombre" required placeholder="Nombre del Platillo (Postre, Bebida, Platillo)">
+				</div>
+				<div>
+					<textarea name="descrip" rows="8" cols="40" required placeholder="Añadir Descripcion"></textarea>
+				</div>
+				<div>
+					<textarea name="sugerencia" rows="8" cols="40" placeholder="Añadir Sugerencia"></textarea>
+				</div>
+				<div>
+					<textarea name="img" rows="8" cols="40" required placeholder="Añadir Link de Imagen del Platillo"></textarea>
+				</div>
+				<div>
+					<select name="tipo" required >
+						<option value="">- Seleccion el Tipo -</option>
+						<option value="Entrada">Entrada</option>
+						<option value="Fuerte">Fuerte</option>
+						<option value="Postre">Postre</option>
+						<option value="Bebida">Bebida</option>
+					</select>
+				</div>
+
+				<div>
+					<button name="btn_new">Agregar</button>
+				</div>
+		</div>
+	</form>
 	</div>
 
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
