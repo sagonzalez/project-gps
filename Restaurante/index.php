@@ -72,6 +72,7 @@
 	</div>
 	</div>
 
+	<!-- Contenedor de imagenes -->
 	<div class="slideshow-container" title="Platillos destacados">
 	    <div class="mySlides fade">
 	      <img src="https://vokrugsveta.ua/wp-content/uploads/2016/05/stack1.jpg" style="width:100%">
@@ -103,7 +104,8 @@
     <span class="dot" onclick="currentSlide(3)"></span> 
     <span class="dot" onclick="currentSlide(4)"></span> 
   </div>
-
+  
+  	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="js/slides.js"></script>
 </body>
 </html>

@@ -13,8 +13,12 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {  //estaba en la última img y le dio hacia delante
+    slideIndex = 1;
+  } 
+  if (n < 1) {  //estaba en la primera imagen y le dio hacia atras
+    slideIndex = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
