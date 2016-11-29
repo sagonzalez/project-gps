@@ -19,21 +19,23 @@
 
 <div>
     <form class="alinear-form" id="form1" action="php/checklogin.php" method="post">
-        <div class="alinear-1">
-            <label >Usuario: </label>
-            <input type="text" id="us" name="user" required/>
+        
+        <div class="contenedor_datos"> 
+            <label class="credenciales">Ingresa tus creedenciales</label>
+            <div class="alinear-1">
+                <input type="text" id="us" name="user" placeholder="usuario" required/>
+            </div>
+
+            <div class="alinear-1">
+                <input type="password" id="pa" name="pass" placeholder="contraseña" required/>
+            </div>
+
+            <div class="alinear-2">
+                <button id="btnenviar">Iniciar sesión</button>
+            </div>
+            <br>
+            <label class="olvidar_contraseña">Olvidaste tu contraseña?</label>
         </div>
-
-        <div class="alinear-1">
-
-            <label >Password: </label>
-            <input type="password" id="pa" name="pass" required/>
-        </div>
-
-        <div class="alinear-2">
-            <button id="btnenviar">Entrar</button>
-        </div>
-
     </form>
 
 </div>
