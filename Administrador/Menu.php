@@ -54,7 +54,7 @@
 			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen' required >".$fila['Img']."</textarea>
 			               <br>
 			               <label>Descripcion: </label><textarea   name='descrip' required >".$fila['Descripcion']."</textarea><br><br><br><hr>
-			               <label>Costo: </label><input type='text' name='costo' required value='".$fila['Costo']."'>
+			               <label>Costo: </label><input type='number' name='costo' step='0.01' required value='".$fila['Costo']."'>
 
 			               <div class='botones'>
 			               		<button name='btn_mod'>Modificar</button>
@@ -99,7 +99,7 @@
 			               <br>
 			               <label>Descripcion: </label><textarea   name='descrip'  required >".$fila['Descripcion']."</textarea><br><br><br>
 										 <label>Sugerencia: </label><textarea   name='suger' required >".$fila['Sugerencia']."</textarea><br><br><br><hr>
-			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."' required >
+			               <label>Costo: </label><input type='number' name='costo' step='0.01' value='".$fila['Costo']."' required >
 
 			               <div class='botones'>
 			               		<button name='btn_mod_pf'>Modificar</button>
@@ -143,7 +143,7 @@
 			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen' required >".$fila['Img']."</textarea>
 			               <br>
 			               <label>Descripcion: </label><textarea   name='descrip'  required >".$fila['Descripcion']."</textarea><br><br><br><hr>
-			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."' required >
+			               <label>Costo: </label><input type='number' name='costo' step='0.01' value='".$fila['Costo']."' required >
 
 			               <div class='botones'>
 			               		<button name='btn_mod'>Modificar</button>
@@ -187,11 +187,11 @@
 			            <label>Imagen: </label><img src='".$fila['Img']."' alt=''/><textarea name='imagen' required >".$fila['Img']."</textarea>
 			               <br>
 			               <label>Descripcion: </label><textarea   name='descrip'  required >".$fila['Descripcion']."</textarea><br><br><br><hr>
-			               <label>Costo: </label><input type='text' name='costo' value='".$fila['Costo']."' required >
+			               <label>Costo: </label><input type='number' name='costo' step='0.01' value='".$fila['Costo']."' required >
 
 			               <div class='botones'>
 			               		<button name='btn_mod_beb'>Modificar</button>
-			               		<button name='btn_del'>Eliminar</button>
+			               		<button name='btn_del_beb'>Eliminar</button>
 			               </div>
 			        </div>
 			    </div>
@@ -233,6 +233,11 @@
 				<div>
 					<textarea name="img" rows="8" cols="40" required placeholder="Añadir Link de Imagen del Platillo"></textarea>
 				</div>
+
+				<div>
+						<input type="number" name="costo" required placeholder="Ingrese su Costo" step="0.01">
+				</div>
+
 				<div>
 					<select name="tipo" required >
 						<option value="">- Seleccion el Tipo -</option>

@@ -212,31 +212,92 @@
 			return $resultados;
 		}//obtenemos los registros de los platillos de postres
 
+		//
+
+					//Menu
+
+		//
 		public function modificarPlatillo($id,$nombre,$img,$descripcion,$costo)
 		{
-
+			$consulta = "update Platillo set Nombre ='".$nombre."' ,Descripcion ='".$descripcion."',Costo  = ".$costo.",Img = '".$img."' where idPlatillo = ".$id.";";
+			$conectar = $this->getConexion();
+			$resultado = $conectar->query($consulta);
+			$conectar->close();
+			return $resultado;
 		}
 
 		public function modificarPlatilloF($id,$nombre,$img,$descripcion,$sugerencia,$costo)
 		{
-
+			$consulta = "update Platillo set Nombre ='".$nombre."' ,Descripcion ='".$descripcion."' ,Sugerencia = '".$sugerencia."' ,Costo  = ".$costo.",Img = '".$img."' where idPlatillo = ".$id.";";
+			$conectar = $this->getConexion();
+			$resultado = $conectar->query($consulta);
+			$conectar->close();
+			return $resultado;
 		}
 
 		public function eliminarPlatillo($id)
 		{
+			$sql = $this->getConexion();
+
+			$query = "delete from Platillo where idPlatillo = ".$id.";";
+
+			$resultado = $sql->query($query);
+			$sql->close();
+			return $resultado;
 		}
 
 		public function modificarBebida($id,$nombre,$img,$descripcion,$costo)
 		{
-			# code...
+
+			$consulta = "update Bebidas set Nombre ='".$nombre."' ,Descripcion ='".$descripcion."' ,Costo  = ".$costo.",Img = '".$img."' where idBebidas = ".$id.";";
+			$conectar = $this->getConexion();
+			$resultado = $conectar->query($consulta);
+			$conectar->close();
+			return $resultado;
 		}
 
 		public function eliminarBebida($id)
 		{
-			# code...
+			$sql = $this->getConexion();
+			$query = "delete from Bebidas where idBebidas = ".$id.";";
+			$resultado = $sql->query($query);
+			$sql->close();
+			return $resultado;
 		}
 
 
+		public function insertPlatilloF($nombre,$descripcion,$sugerencia,$tipo,$costo,$img)
+		{
+			$sql = $this->getConexion();
+
+			$query =  "insert into Platillo (Nombre,Descripcion,Sugerencia,Tipo_Platillo,Costo,Img)values('".$nombre."','".$descripcion."','".$sugerencia."','".$tipo."',".$costo.",'".$img."');";
+
+			$resultado = $sql->query($query);
+			$sql->close();
+			return $resultado;
+		}
+
+		public function insertPlatillo($nombre,$descripcion,$tipo,$costo,$img)
+		{
+						$sql = $this->getConexion();
+
+						$query =  "insert into Platillo (Nombre,Descripcion,Tipo_Platillo,Costo,Img)values('".$nombre."','".$descripcion."','".$tipo."',".$costo.",'".$img."');";
+
+						$resultado = $sql->query($query);
+						$sql->close();
+						return $resultado;
+		}
+
+		public function insertBebida($nombre,$descripcion,$costo = 14.3,$img)
+		{
+			$sql = $this->getConexion();
+
+			$query =  "insert into Bebidas (Nombre,Descripcion,Costo,Img)values('".$nombre."','".$descripcion."',".$costo.",'".$img."');";
+
+			$resultado = $sql->query($query);
+			$sql->close();
+			return $resultado;
+		}
 
 	}//class
 
