@@ -12,7 +12,7 @@
 		}
 
 		public function getConexion(){
-			$mysql = new mysqli("localhost","root","linux123","RestaurantDB");
+			$mysql = new mysqli("127.0.0.1","root","linux123","RestaurantDB");
 
 			if ($mysql->connect_errno) {
 				echo "Fallo la conexion con la bd";

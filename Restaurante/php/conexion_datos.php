@@ -15,7 +15,7 @@
 
 		private function getConexion(){
 
-			$mysql = new mysqli("localhost","root","linux123","RestaurantDB"); #mandamos los datos para la conexio
+			$mysql = new mysqli("127.0.0.1","root","linux123","RestaurantDB"); #mandamos los datos para la conexio
 
 			#verificamos si resulto algun error
 			if($mysql->connect_errno){
