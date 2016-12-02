@@ -197,7 +197,7 @@
 
 		<form action="AdministrarReservaciones.php" method="post">
 
-			<div>
+			<div class="buscador">
 				<label>Ingrese una fecha: </label><input type="date" name="fecha_buscar" required><button name="btn_buscar">Buscar</button>
 			</div>
 		</form>
@@ -383,5 +383,8 @@
 
 
   </div>
+	<div class="atras">
+			<a href="administrador.php">Regresar</a>
+	</div>
 </body>
 </html>

@@ -86,9 +86,13 @@
 
 								<div>
 								<input type='number' name='tel1' placeholder='Telefono 1' value='".$fila['Telefono']."' required>
-								<input type='number' name='tel2' placeholder='Telefono 2' value='".$fila['Telefono2']."' >
+								
 								</div>
 
+								<div>
+
+									<input type='number' name='tel2' placeholder='Telefono 2' value='".$fila['Telefono2']."' >
+								</div>
 								<div>
 								<input type='text' name='dire' placeholder='Direccion' value='".$fila['Direccion']."' required>
 								</div>
@@ -100,7 +104,7 @@
 									<input type='text' name='email' placeholder='Correo Electronico' value='".$fila['Email']."' required>
 								</div>
 								<div>
-									<textarea name='mapa' placeholder='Agrega el Mapa de Google!'>".$fila['Maps']."</textarea>
+									<textarea name='mapa' rows='8' cols='40' placeholder='Agrega el Mapa de Google!'>".$fila['Maps']."</textarea>
 								</div>
                 <div>
 								<input type='text' name='horario' placeholder='Hoario' value='".$fila['Horario']."' required>
@@ -122,6 +126,9 @@
 
 	</div>
 
+<div class="atras">
+	<a href="administrador.php">Regresar</a>
+</div>
 
 </body>
 </html>

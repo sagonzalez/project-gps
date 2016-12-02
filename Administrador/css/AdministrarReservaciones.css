@@ -142,6 +142,13 @@ a:hover, a:active {
 	padding: 20px;
 }
 
+.div-reservaciones-hoy{
+
+  background: rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  padding: 20px;
+}
+
 .div-solicitudes{
   margin: 15px;
   color: white;
@@ -159,7 +166,8 @@ a:hover, a:active {
 
 .div-buscar{
 	background: rgba(0, 0, 0, 0.5);
-	margin: 15px;
+  margin: 15px;
+  padding: 20px;
 }
 
 .div-menu{
@@ -170,13 +178,14 @@ a:hover, a:active {
 
 .div-menu a{
   width: 230px;
+  height: 10px;
   margin: 5px;
   font-size:large;
-  font-weight: bold;
+
 }
 
 .div-menu a:link,.div-menu a:visited {
-    background-color: blue;
+    background-color: black;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -185,5 +194,60 @@ a:hover, a:active {
 }
 
 .div-menu a:hover,.div-menu a:active {
-    background-color: darkblue;
+    background-color: red;
+}
+
+.atras{
+  margin:15px;
+
+}
+.atras a{
+  width: 230px;
+  margin: 15px;
+  padding: 5px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.atras a:link,.atras a:visited {
+    background-color: black;
+    color: white;
+
+    /*padding: 14px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.atras a:hover,.atras a:active {
+    background-color: red;
+}
+
+.buscador{
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+.buscador label{
+  font-size: x-large;
+  color: white;
+  margin: 5px;
+}
+
+.buscador input{
+  margin: 15px;
+}
+
+.buscador button{
+  margin: 15px;
+  font-size: large;
+  color: white;
+  border:2px solid darkblue;
+  background-color: darkblue;
+  padding: 10px;
+}
+
+.buscador button:hover{
+  background-color: blue;
+  border:2px solid blue;
 }

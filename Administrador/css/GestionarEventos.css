@@ -125,3 +125,108 @@ a:hover, a:active {
 	padding: 15px;
 	text-align: center;
 }
+
+.atras{
+  margin:15px;
+
+}
+.atras a{
+  width: 230px;
+  margin: 15px;
+  padding: 5px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.atras a:link,.atras a:visited {
+    background-color: black;
+    color: white;
+
+    /*padding: 14px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.atras a:hover,.atras a:active {
+    background-color: red;
+}
+
+.contenedor-nuevo{
+
+  font-size: large;
+  margin: 15px;
+  padding: 15px;
+}
+
+.contenedor-nuevo label{
+  margin: 50px;
+}
+
+.contenedor-nuevo input{
+  margin: 50px;
+}
+
+.contenedor-nuevo button{
+  margin:25px;
+  text-align: center;
+  
+  font-size: large;
+   background-color: darkblue;
+  border:2px solid darkblue;
+
+  
+  color: white;
+
+}
+
+.contenedor-nuevo button:hover{
+  margin:25px;
+  border:2px solid blue;
+  background-color: blue;
+
+}
+
+
+/**/
+
+.contenedor-modificar{
+
+  font-size: large;
+  margin: 15px;
+  padding: 15px;
+}
+
+.contenedor-modificar label{
+  margin: 50px;
+}
+
+.contenedor-modificar input{
+  margin: 50px;
+}
+
+.contenedor-modificar button{
+  margin:25px;
+  text-align: center;
+  
+  font-size: large;
+   background-color: darkblue;
+  border:2px solid darkblue;
+
+  
+  color: white;
+
+}
+
+.contenedor-modificar button:hover{
+  margin:25px;
+  border:2px solid blue;
+  background-color: blue;
+
+}
+
+.contenedor-modificar span{
+  background: black;
+  font-size: xx-large;
+  width: 500px;
+}

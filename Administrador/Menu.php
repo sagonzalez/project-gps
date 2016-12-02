@@ -13,7 +13,7 @@
 
 	<div class="menu_principal">
 		<div class="encabezado">
-			Panel de Control <a href="php/logout.php">Cerrar Sesion</a>
+			Menú <a href="php/logout.php">Cerrar Sesion</a>
 		</div>
 	</div>
 
@@ -255,6 +255,9 @@
 	</form>
 	</div>
 
+	<div class="atras">
+		<a href="administrador.php">Regresar</a>
+	</div>
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="js/CodigoJs.js" ></script>
 </body>

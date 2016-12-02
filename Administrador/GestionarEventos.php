@@ -72,7 +72,7 @@ if(isset($_POST['btn_new'])){
 
  ?>
 	<div class="menu_principal">
-		Gestionar Comentarios <a href="php/logout.php">Cerrar Sesion</a>
+		Gestionar Eventos <a href="php/logout.php">Cerrar Sesion</a>
 	</div>
 
 
@@ -165,6 +165,8 @@ if(isset($_POST['btn_new'])){
 			</ul>
 		</div>
 	</div>
-
+	<div class="atras">
+		<a href="administrador.php">Regresar</a>
+	</div>
 </body>
 </html>

@@ -24,6 +24,7 @@ li a {
   	margin-top: 0px;
   	margin-bottom: 200px;*/
   	margin: auto;
+    
   	border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -114,8 +115,22 @@ a:hover, a:active {
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
 	overflow: fixed;
+  text-align: center;
 }
 
+.campos-contacto button{
+  margin: 15px;
+  border:2px solid darkblue;
+  background-color: darkblue;
+  color: white;
+  font-size: large;
+  padding: 15px;
+}
+
+.campos-contacto button:hover{
+  border:2px solid blue;
+  background-color: blue;
+}
 .campos-contacto input{
 	margin	: 20px;
 }
@@ -132,11 +147,47 @@ a:hover, a:active {
 }
 
 .div-izquierdo{
-	float: left;
-	overflow: fixed;
+  font-size: xx-large;
+  text-align: center;
 }
 
 .div-derecho{
-	float: right;
-	overflow: fixed;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.div-izquierdo input{
+  width: 340px;
+  height: 25px;
+}
+
+.div-derecho input{
+  width: 340px; 
+  height: 25px;
+}
+
+.atras{
+  margin:15px;
+
+}
+.atras a{
+  width: 230px;
+  margin: 15px;
+  padding: 5px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.atras a:link,.atras a:visited {
+    background-color: black;
+    color: white;
+
+    /*padding: 14px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.atras a:hover,.atras a:active {
+    background-color: red;
 }

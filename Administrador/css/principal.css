@@ -89,6 +89,46 @@ a:hover{
   overflow: auto;
 }
 
+.opciones1 a{
+  width: 230px;
+  margin: 15px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.opciones1 a:link,.opciones1 a:visited {
+    background-color: orange;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.opciones1 a:hover,.opciones1 a:active {
+    background-color: yellow;
+}
+
+.opciones2 a{
+  width: 230px;
+  margin: 15px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.opciones2 a:link,.opciones2 a:visited {
+    background-color: orange;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.opciones2 a:hover,.opciones2 a:active {
+    background-color: yellow;
+}
+
 a{
   width: 230px;
   margin: 15px;
@@ -127,4 +167,30 @@ a:hover, a:active {
 	font-size: large;
 
 	list-style-type: none;
+}
+
+.atras{
+  margin:15px;
+
+}
+.atras a{
+  width: 230px;
+  margin: 15px;
+  padding: 5px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.atras a:link,.atras a:visited {
+    background-color: black;
+    color: white;
+
+    /*padding: 14px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.atras a:hover,.atras a:active {
+    background-color: red;
 }
