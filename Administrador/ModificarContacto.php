@@ -78,57 +78,39 @@
               echo "
                 <input type='hidden' name='id' value='".$fila['idContacto']."'>
 
-								<div class='div-izquierdo'>
+				<div class='div-izquierdo'>
 
-                <div>
-								<input type='text' name='nombre' placeholder='Nombre' value='".$fila['Nombre']."' required>
-								</div>
+					<input type='text' class='nom' name='nombre' placeholder='Nombre' value='".$fila['Nombre']."' required>
+					<br>
+					<input type='number' class='tel' name='tel1' placeholder='Telefono 1' value= '".$fila['Telefono']."' required>
+	
+					<input type='number' class='tel' name='tel2' placeholder='Telefono 2' value='".$fila['Telefono2']."' >
+					<br>
+					<textarea name='dire' class='txt_area' placeholder='Direccion' rows='10' cols='38' required> ".$fila['Direccion']." </textarea>
+				</div>
 
-								<div>
-								<input type='number' name='tel1' placeholder='Telefono 1' value='".$fila['Telefono']."' required>
 								
-								</div>
 
-								<div>
-
-									<input type='number' name='tel2' placeholder='Telefono 2' value='".$fila['Telefono2']."' >
-								</div>
-								<div>
-								<input type='text' name='dire' placeholder='Direccion' value='".$fila['Direccion']."' required>
-								</div>
-
-								</div>
-
-								<div class='div-derecho'>
-								<div>
-									<input type='text' name='email' placeholder='Correo Electronico' value='".$fila['Email']."' required>
-								</div>
-								<div>
-									<textarea name='mapa' rows='8' cols='40' placeholder='Agrega el Mapa de Google!'>".$fila['Maps']."</textarea>
-								</div>
-                <div>
-								<input type='text' name='horario' placeholder='Hoario' value='".$fila['Horario']."' required>
-								</div>
-								</div>
-
-                <div><button>Guardar Cambios</button></div>
-
+				<div class='div-derecho'>
+								
+					<input type='text' name='email' class='nom' placeholder='Correo Electronico' value='".$fila['Email']."' required>
+					<br>
+					<textarea name='mapa' class='txt_area' rows='8' cols='40' placeholder='Agrega el Mapa de Google!'>".$fila['Maps']."</textarea>
+					<br>
+					<input type='text' name='horario' class='tel' placeholder='Hoario' value='".$fila['Horario']."' required>
+				
+				<div>
               ";
-
             }
-
-
-
          ?>
+        <div><button>Guardar Cambios</button></div>
     </form>
-
-
 
 	</div>
 
-<div class="atras">
+<!-- <div class="atras">
 	<a href="administrador.php">Regresar</a>
-</div>
+</div> -->
 
 </body>
 </html>

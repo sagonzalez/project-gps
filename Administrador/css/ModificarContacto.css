@@ -3,96 +3,27 @@ body{
 	background-image: url("../img/fondo2.jpg");
 	font-size: 100%;
 }
-li {
-    float: left;	/*los pone a la izq horizontalmente*/
-    font-size: medium;
-}
 
-li a {
-	display: block;	/*la menera en que se ven los items, como bloques*/
-    color: white;
-    padding: 15px 20px;
-    text-decoration: none;	/*quita el subrayado del enlace*/
-}
-.img{
-	display: block;
-	margin: auto;
-}
 .menu_principal{
-	/*margin-left: 100px;
-  	margin-right: 100px;
-  	margin-top: 0px;
-  	margin-bottom: 200px;*/
-  	margin: auto;
-    
+  	margin: auto;    
   	border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
     background: rgba(0,0,0,0.5);
-  	/*opacity: 0.5;*/
-
-
   	text-align: center;
   	color: white;
   	font-size: xx-large;
 }
 
-.menus {
-    list-style-type: none;	/*le quita el estilo que pueda tener por eso que son listas*/
-    margin: auto;
-    padding: 0;
-    overflow: hidden;	/*specifies what to do if the content of an element exceeds the size of the element's box.*/
-    background-color: #333;	/*color de fondo */
-}
-.menus li > ul{
-	list-style: none;
-	display: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	min-width: 140px;
-	background: #333;
-}
-.menus li:hover > ul{
-	display: block;
-}
-
-/*a:hover:not(.active) {	/*no cambia .active
-
-    background-color: #111;
-    background: #4CAF50;
-}*/
 a:hover{
 	background: #4CAF50;
-}
-
-.content_platillos{
-	margin: auto;
-	margin-top: 10px;
-	height: 550px;
-	background: #CC9933;
-	opacity: 0.5;
-	z-index: -1;
-}
-/*.active {
-	background-color:#4CAF50;
-}*/
-
-.opciones1{
-	float: left;
-  margin: 150px;
-  overflow: auto;
-}
-
-.opciones2{
-  float: right;
-  margin: 150px;
-  overflow: auto;
 }
 
 a{
   width: 230px;
   margin: 15px;
+  float: right;
+  margin-top: -6px;
   font-size:large;
   font-weight: bold;
 }
@@ -111,33 +42,36 @@ a:hover, a:active {
 }
 
 .campos-contacto{
-	margin: 20px;
+	/*margin: 20px;*/
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
+  border-radius: 5px;
 	overflow: fixed;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .campos-contacto button{
   margin: 15px;
-  border:2px solid darkblue;
-  background-color: darkblue;
+  background-color: #333; /* Green */
+  border: solid black;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: large;
-  padding: 15px;
+  margin-top: 10px;
+  float: right;
 }
-
 .campos-contacto button:hover{
-  border:2px solid blue;
-  background-color: blue;
+    background: #4CAF50;
+    cursor: pointer;
 }
+
 .campos-contacto input{
-	margin	: 20px;
+	margin: 10px;
 }
 
-.campos-contacto textarea{
-
-}
 .titulo-contacto{
 	font-size: xx-large;
 	font-weight: bold;
@@ -147,28 +81,38 @@ a:hover, a:active {
 }
 
 .div-izquierdo{
-  font-size: xx-large;
-  text-align: center;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  margin-left: 80px;
+  float: left;
 }
-
 .div-derecho{
-  font-size: xx-large;
-  text-align: center;
+  float: right;
+  margin-right: 80px;
+  /*background: rgba(0, 0, 0, 0.5);*/
 }
 
-.div-izquierdo input{
-  width: 340px;
-  height: 25px;
+.nom{
+  width: 400px;
+  height: 30px;
+  font-size: large;
 }
 
-.div-derecho input{
-  width: 340px; 
-  height: 25px;
+.tel{
+  width: 185px;
+  height: 30px;
+  font-size: large;
+}
+.txt_area{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: large;
 }
 
-.atras{
+
+/*.atras{
   margin:15px;
-
+  text-align: left;
 }
 .atras a{
   width: 230px;
@@ -182,7 +126,7 @@ a:hover, a:active {
     background-color: black;
     color: white;
 
-    /*padding: 14px 25px;*/
+    
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -191,3 +135,4 @@ a:hover, a:active {
 .atras a:hover,.atras a:active {
     background-color: red;
 }
+*/
