@@ -1,7 +1,11 @@
 
 body{
 	background-image: url("../img/fondo2.jpg");
-	font-size: 100%;
+	background-repeat: repeat-y;  /* Background image repite por el eje y */
+  background-attachment: fixed; /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
+  background-size: cover;  /* This is what makes the background image rescale based on the container's size */
+  background-color: #464646;  /* Set a background color that will be displayed while the background image is loading */
+  font-size: 100%;
 }
 li {
     float: left;	/*los pone a la izq horizontalmente*/
@@ -159,7 +163,7 @@ a:hover, a:active {
 
 .lista-comentarios li{
 	float:none;
-	border: 2px solid blue;
+	border: 2px solid #4bceb4;
 	border-radius: 1em;
 	margin: 15px;
 	padding: 10px;
