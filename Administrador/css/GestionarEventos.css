@@ -1,7 +1,11 @@
 
 body{
 	background-image: url("../img/fondo2.jpg");
-	font-size: 100%;
+	background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: cover;
+  text-align: center;
+  font-size: 100%;
 }
 
 .img{
@@ -100,24 +104,33 @@ a:hover, a:active {
 }
 
 .contenedor-nuevo{
-	background: rgba(0, 0, 0, 0.5);
-	color: white;
-	font-size: large;
-	font-weight: bold;
-	padding: 15px;
-	margin: 20px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 350px;
+  border-radius: 5px;
 }
 
 .contenedor-modificar{
-	margin: 20px;
-	background: rgba(0, 0, 0, 0.5);
+	/*background: rgba(0, 0, 0, 0.5);*/
+  border-radius: 5px;
 	color: white;
+  font-size: large;
+  margin: 15px;
+  padding: 15px;
 }
 .titulo-nuevo{
 	font-size: xx-large;
 	font-weight: bold;
 	padding: 15px;
 	text-align: center;
+}
+.titulo-nuevo hr{
+  border-width: 2px;
+  border-color: #4bceb4;
+}
+hr{
+  border-width: 2px;
+  border-color: #4bceb4;
 }
 .titulo-modificar{
 	font-size: xx-large;
@@ -152,81 +165,99 @@ a:hover, a:active {
     background-color: red;
 }
 
-.contenedor-nuevo{
-
-  font-size: large;
-  margin: 15px;
-  padding: 15px;
-}
-
-.contenedor-nuevo label{
-  margin: 50px;
-}
-
-.contenedor-nuevo input{
-  margin: 50px;
-}
-
-.contenedor-nuevo button{
-  margin:25px;
-  text-align: center;
-  
-  font-size: large;
-   background-color: darkblue;
-  border:2px solid darkblue;
-
-  
-  color: white;
-
-}
-
-.contenedor-nuevo button:hover{
-  margin:25px;
-  border:2px solid blue;
-  background-color: blue;
-
-}
-
-
-/**/
-
-.contenedor-modificar{
-
-  font-size: large;
-  margin: 15px;
-  padding: 15px;
-}
-
-.contenedor-modificar label{
-  margin: 50px;
-}
-
-.contenedor-modificar input{
-  margin: 50px;
-}
-
-.contenedor-modificar button{
-  margin:25px;
-  text-align: center;
-  
-  font-size: large;
-   background-color: darkblue;
-  border:2px solid darkblue;
-
-  
-  color: white;
-
-}
-
-.contenedor-modificar button:hover{
-  margin:25px;
-  border:2px solid blue;
-  background-color: blue;
-
-}
-
 .contenedor-modificar span{
   background: black;
   font-size: xx-large;
   width: 500px;
+}
+.contenedor_izq{
+  float: left;
+  text-align: left;
+  margin-left: 80px;
+  /*background: rgba(0, 0, 0, 0.5);*/
+}
+.txt_mod{
+  font-size: x-large;
+}
+.contenedor_izq input{
+  width: 410px;
+  height: 30px;
+  font-size: large;
+  padding: 3px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.contenedor_izq textarea{
+  font-size: large;
+}
+
+.contenedor_der{
+  float: right;
+  text-align: left;
+  margin-right: 80px;
+  /*background: rgba(0, 0, 0, 0.5);*/
+}
+.contenedor_der label{
+  font-size: x-large;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.contenedor_der input{
+  font-size: large;
+  margin-bottom: 10px;
+}
+.contenedor_der textarea{
+  font-size: large;
+}
+.btn_crear button{
+  margin-top: 10px;
+  background-color: #333; /* Grayn */
+  border: solid black;
+  color: white;
+  width: 200px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+}
+.btn_crear button:hover{
+  background: #4CAF50;
+  cursor:pointer;
+}
+.btn_mod{
+  background-color: #333; /* Grayn */
+  border: solid black;
+  color: white;
+  width: 200px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+}
+.btn_mod:hover{
+  background: #4CAF50;
+  cursor: pointer;
+}
+.btn_del{
+  background-color: #333; /* Grayn */
+  border: solid black;
+  color: white;
+  width: 200px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+}
+.btn_del:hover{
+  background: tomato;
+  cursor: pointer;
+}
+.por_evento{
+  list-style: none;
+  background: rgba(0,0,0,0.5);
+  height: 400px;
+  margin-bottom: 30px;
 }

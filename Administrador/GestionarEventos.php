@@ -79,32 +79,32 @@ if(isset($_POST['btn_new'])){
 	<div class="contenedor-nuevo">
 			<div class="titulo-nuevo">
 					<label>Crear un nuevo evento</label>
+					<hr>
 			</div>
 
 
 			<form  action="GestionarEventos.php" method="post">
-				<div >
-						<label>Titulo del evento: </label><input type="text" name="new_titulo" placeholder="Titulo">
+				<div class="contenedor_izq">
+						<input type="text" name="new_titulo" placeholder="Titulo del evento">
+						<br>
+						<textarea name="new_descripcion" rows="8" cols="40" placeholder="Inserte la descripcion del evento"></textarea>
 				</div>
 
-				<div >
-						<label>Descripcion: </label><textarea name="new_descripcion" rows="8" cols="40" placeholder="Inserte la descripcion del eventos"></textarea>
+				<div class="contenedor_der">
+						<label>Fecha del evento: </label>
+						<br>
+						<input type="date" name="new_fecha" >
+						<br>
+						<label>Imagen descriptiva(URL): </label>
+						<br>
+						<textarea name="new_image" rows="8" cols="40" placeholder='Inserta la URL de la imagen'></textarea>
+					<div class="btn_crear">
+						<button name="btn_new">Crear Evento</button>
+					</div>
 				</div>
-				<div >
-						<label>Fecha del evento: </label><input type="date" name="new_fecha" >
-				</div>
-
-				<div >
-						<label>Imagen descriptiva(URL): </label><textarea name="new_image" rows="8" cols="40" placeholder='Inserta la URL de la imagen'></textarea>
-				</div>
-
-				<div >
-					<button name="btn_new">Crear Evento</button>
-				</div>
-
 			</form>
-
 	</div>
+	<hr>
 
 	<div class="contenedor-modificar">
 		<div class="titulo-modificar">
@@ -120,31 +120,34 @@ if(isset($_POST['btn_new'])){
 							while ($fila = $resultado->fetch_assoc()) {
 								echo "
 
-								<li>
+								<li class='por_evento'>
 									<span>".$fila['Fecha']."</span>
 									<ul>
 										<li>
 											<form action='GestionarEventos.php' method='post'>
 
 												<input type='hidden' name = 'id' value='".$fila['idEventos']."'>
-												<div >
-														<label>Titulo del evento: </label><input type='text' name='old_titulo' placeholder='Titulo' value='".$fila['Titulo']."'>
+												<div class='contenedor_izq'>
+														<label class='txt_mod'>Titulo del evento: </label>
+														<br>
+														<input type='text' name='old_titulo' placeholder='Titulo' value='".$fila['Titulo']."'>
+														<br>
+														<label class='txt_mod'>Descripcion: </label>
+														<br>
+														<textarea name='old_descripcion' rows='8' cols='40' placeholder='Inserte la descripcion del eventos'>".$fila['Descripcion']."</textarea>
 												</div>
-
-												<div >
-														<label>Descripcion: </label><textarea name='old_descripcion' rows='8' cols='40' placeholder='Inserte la descripcion del eventos'>".$fila['Descripcion']."</textarea>
-												</div>
-												<div >
-														<label>Fecha del evento: </label><input type='date' name='old_fecha'  value='".$fila['Fecha']."'>
-												</div>
-
-												<div >
-														<label>Imagen descriptiva(URL): </label><textarea name='old_image' rows='8' cols='40' placeholder='Inserta la URL de la imagen'>".$fila['Img']."</textarea>
-												</div>
-
-												<div>
-														<button name='btn_modificar'>Modificar</button>
-														<button name='btn_eliminar'>Eliminar</button>
+												<div class='contenedor_der'>
+														<label>Fecha del evento: </label>
+														<br>
+														<input type='date' name='old_fecha'  value='".$fila['Fecha']."'>
+														<br>
+														<label>Imagen descriptiva(URL): </label>
+														<br>
+														<textarea name='old_image' rows='8' cols='40' placeholder='Inserta la URL de la imagen'>".$fila['Img']."</textarea>
+													<div>
+															<button class='btn_mod' name='btn_modificar'>Modificar</button>
+															<button class='btn_del' name='btn_eliminar'>Eliminar</button>
+													</div>
 												</div>
 											</form>
 

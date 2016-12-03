@@ -74,7 +74,7 @@
 											<label>No.Comentario: ".$fila['idComentarios']."</label><input type='hidden' name='num_com' value='".$fila['idComentarios']."'><br>
 											<label>Por: ".$fila['Nombre_Per']."</label><br>
 											<label>".$fila['Comentario']."</label><br>
-											<button clas='btn_eliminar'>Eliminar</button>
+											<button class='btn_eliminar'>Eliminar</button>
 
 										</li>
 

@@ -19,42 +19,16 @@ li a {
 	margin: auto;
 }
 .menu_principal{
-	/*margin-left: 100px;
-  	margin-right: 100px;
-  	margin-top: 0px;
-  	margin-bottom: 200px;*/
   	margin: auto;
   	border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
     background: rgba(0,0,0,0.5);
-  	/*opacity: 0.5;*/
-
-
   	text-align: center;
   	color: white;
   	font-size: xx-large;
 }
 
-.menus {
-    list-style-type: none;	/*le quita el estilo que pueda tener por eso que son listas*/
-    margin: auto;
-    padding: 0;
-    overflow: hidden;	/*specifies what to do if the content of an element exceeds the size of the element's box.*/
-    background-color: #333;	/*color de fondo */
-}
-.menus li > ul{
-	list-style: none;
-	display: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	min-width: 140px;
-	background: #333;
-}
-.menus li:hover > ul{
-	display: block;
-}
 
 /*a:hover:not(.active) {	/*no cambia .active
 
@@ -65,29 +39,6 @@ a:hover{
 	background: #4CAF50;
 }
 
-.content_platillos{
-	margin: auto;
-	margin-top: 10px;
-	height: 550px;
-	background: #CC9933;
-	opacity: 0.5;
-	z-index: -1;
-}
-/*.active {
-	background-color:#4CAF50;
-}*/
-
-.opciones1{
-	float: left;
-  margin: 150px;
-  overflow: auto;
-}
-
-.opciones2{
-  float: right;
-  margin: 150px;
-  overflow: auto;
-}
 
 a{
   width: 230px;
@@ -103,30 +54,6 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-}
-
-a:hover, a:active {
-    background-color: red;
-}
-
-.lista-comentarios{
-
-
-	background: rgba(0, 0, 0, 0.5);
-	padding: 15px;
-	margin: 5px;
-}
-
-.lista-comentarios li{
-	float:none;
-	border: 2px solid blue;
-	border-radius: 1em;
-	margin: 15px;
-	padding: 10px;
-	color: white;
-	font-size: large;
-
-	list-style-type: none;
 }
 
 .div-titulo-reservacion{
@@ -239,15 +166,18 @@ a:hover, a:active {
 }
 
 .buscador button{
-  margin: 15px;
-  font-size: large;
-  color: white;
-  border:2px solid darkblue;
-  background-color: darkblue;
-  padding: 10px;
+    background-color: #333; /* Green */
+    border: solid black;
+    color: white;
+    width: 200px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
 }
 
 .buscador button:hover{
-  background-color: blue;
-  border:2px solid blue;
+  background: #4CAF50;
+  cursor: pointer;
 }
