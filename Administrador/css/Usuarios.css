@@ -1,0 +1,168 @@
+body{
+	background-image: url("../img/fondo2.jpg");
+	font-size: 100%;
+}
+
+.menu-principal {
+	/*margin-left: 100px;
+  	margin-right: 100px;
+  	margin-top: 0px;
+  	margin-bottom: 200px;*/
+  	margin: auto;
+  	border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+  	/*opacity: 0.5;*/
+
+
+  	text-align: center;
+  	color: white;
+  	font-size: xx-large;
+}
+
+.menu-principal a{
+  width: 230px;
+  margin: 15px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.menu-principal a:link,.menu-principal a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-principal a:hover,.menu-principal a:active {
+    background-color: red;
+}
+
+.info-user{
+	background: rgba(0,0,0,0.5);
+	margin: 15px;
+	text-align: center;
+	margin: 15px;
+}
+
+.info-user label{
+	color: white;
+	font-size: large;
+	text-align: right;
+	margin: 15px;
+	
+}
+
+.info-user input{
+	margin:15px;
+
+	text-align: right;
+}
+
+.info-user button {
+	font-size: large;
+	background-color: darkblue;
+	border:2px solid darkblue;
+	color: white;
+	margin: 15px;
+}
+
+.info-user button:hover{
+	background-color: blue;
+	border:2px solid blue;
+}
+
+.nuevo-user{
+	background: rgba(0,0,0,0.5);
+	margin: 15px;
+	text-align: center;
+	margin: 15px;
+}
+
+.nuevo-user label{
+	color: white;
+	font-size: large;
+	text-align: right;
+	margin: 15px;
+	
+}
+
+.nuevo-user input{
+	margin:15px;
+	width: 250px;
+	font-size: large;
+
+}
+
+.nuevo-user button {
+	font-size: large;
+	background-color: darkblue;
+	border:2px solid darkblue;
+	color: white;
+	margin: 15px;
+}
+
+.nuevo-user button:hover{
+	background-color: blue;
+	border:2px solid blue;
+}
+
+
+.buscar-user{
+	background: rgba(0,0,0,0.5);
+	margin: 15px;
+	text-align: center;
+	margin: 15px;
+}
+
+.buscar-user label{
+	color: white;
+	font-size: large;
+	text-align: right;
+	margin: 15px;
+	
+}
+
+.buscar-user input{
+	margin:15px;
+	width: 250px;
+	font-size: large;
+
+}
+
+.buscar-user button {
+	font-size: large;
+	background-color: darkblue;
+	border:2px solid darkblue;
+	color: white;
+	margin: 15px;
+}
+
+.buscar-user button:hover{
+	background-color: blue;
+	border:2px solid blue;
+}
+
+.div-titulo{
+	background-color: black;
+  color: white;
+  font-size: x-large;
+}
+
+.label-buscar{
+	margin:15px;
+}
+.label-buscar label{
+	font-size: x-large;
+	color: yellow;
+
+}
+
+.campos {
+	font-size: xx-large;
+	color: white;
+	
+}
