@@ -299,6 +299,99 @@
 			return $resultado;
 		}
 
+		/*
+
+			usuariso
+
+		*/
+
+		public function getUser($user){
+
+			$sql = $this->getConexion();
+			$query = "select * from Usuarios where name_user = '".$user."';";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+
+		}
+
+		public function validarUser($user1,$user2,$operacion)
+		{
+
+			
+				//retorna true si el nuevo usuario es valido
+				$sql = $this->getConexion();
+				$query = "select * from Usuarios where name_user = '".$user1."';";
+				$resultados = $sql->query($query);
+				$sql->close();
+
+				if($fila = $resultados->fetch_assoc()){
+					if ($user1 == $user2 and $operacion == 0) {
+						return true;
+					}
+
+					return false;
+				}else{
+					return true;
+				}
+
+			
+			
+		}
+
+		public function modificarUserSimple($id,$name,$username)
+		{
+
+			$sql = $this->getConexion();
+			$query = "update Usuarios set Nombre ='".$name."' , name_user ='".$username."'  where idUsuarios = ".$id.";";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;			
+			
+		}
+
+		public function modificarStatus($id,$status)
+		{
+
+			$sql = $this->getConexion();
+			$query = "update Usuarios set status = '".$status."'  where idUsuarios = ".$id.";";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;			
+			
+		}
+
+
+		public function modificarUserCompleto($id,$name,$username,$password)
+		{
+
+			$sql = $this->getConexion();
+			$query = "update Usuarios set Nombre ='".$name."' , name_user ='".$username."' ,pass = '".$password."' where idUsuarios = ".$id.";";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;			
+			
+		}
+
+		public function insertUser($name,$username,$password){
+
+			$sql = $this->getConexion();
+			$query = "insert into Usuarios(Nombre,name_user,pass,status)values('".$name."','".$username."','".$password."','A');";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+
+		}
+
+		public function buscarUser($user)
+		{
+			$sql= $this->getConexion();
+			$query  = "select * from Usuarios where (Nombre = '".$user."') or (name_user = '".$user."');";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+
 	}//class
 
 ?>

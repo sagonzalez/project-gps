@@ -62,7 +62,12 @@
 		<div>
 			<a href="comentarios.php">Gestionar Comentarios</a>
 		</div>
+		<div>
+		<a href="Usuarios.php">Administrar Usuarios</a>
+		</div>
 	</div>
+
+	
 
 </body>
 </html>

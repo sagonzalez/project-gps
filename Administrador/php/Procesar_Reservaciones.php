@@ -13,7 +13,8 @@ if (isset($_POST['btn_new'])) {
 
   echo "".$_POST['status_solicitud']."";
   if($_POST['status_solicitud'] == 'Aceptada'){
-    echo "string2";
+    echo "string2"; 
+    #Se supone que si aceptamos la solicitud de reservacion del usuario, se le mandara un correo 
     if($conn->setSolicitud(1,$conn->getIDUser($usr),$id)){
       header("Location: ../AdministrarReservaciones.php");
     }else {

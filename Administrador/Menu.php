@@ -1,3 +1,27 @@
+<?php
+
+	session_start();
+	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+
+	} else {
+	   header("Location: index.html");
+		 echo "<script>alert('Inicie Sesion');</script>";
+	exit();
+
+	}
+
+
+	$now = time();
+
+	if($now > $_SESSION['expire']) {
+	session_destroy();
+
+	header("Location: index.html");
+	echo "<script>alert('Su sesion ha terminado');</script>";
+	exit();
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>

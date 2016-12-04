@@ -27,11 +27,11 @@
 
  		$row = $resultado->fetch_assoc();
  		echo "".$row['pass']."<br>";
- 		if ($password == $row['pass']){
+ 		if ($password == $row['pass'] and $row['status']=='A'){
  			$_SESSION['loggedin'] = true;
  			$_SESSION['username'] = $usuario;
  			$_SESSION['start']=time();
- 			$_SESSION['expire'] = $_SESSION['start']+(5*60);
+ 			$_SESSION['expire'] = $_SESSION['start']+(8*60);
 
  		//
  			header("Location:../administrador.php");
