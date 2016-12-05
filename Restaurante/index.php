@@ -31,18 +31,24 @@
 	</div>
 
 	<div title="Lorem ipsum dolor sit amet" class="contenedor">
+		<!--
 		<div class="img1">
 			
 		</div>
+
+		-->
 		<div class="bienvenido">
 			<p>
 				<h2>
+					<!--Mensaje de bienvenida de la empresa-->
 					¡Bienvenido a Bistrót!
 					<hr>
 				</h2>
 			</p>
 			<p>
 				<h3>
+					<!-- Slogan o mensaje particular-->
+
 					Aquí podrás degustar nuestra gran variedad de bocadillos.<br> Un lugar ideal para disfrutar con amigos y familia :)
 				</h3>
 			</p>
@@ -50,8 +56,8 @@
 		</div>
 
 
-		<div class="logo">
-			
+		<div>
+			<!--Aqui va el logo de la empresa-->
 
 		</div>
 
@@ -60,9 +66,13 @@
 				<h2>Especial del Hoy!</h2>
 			</p>
 		</div>
-		<div title="Steak Meat Tomato Grilled Seared Rosemaryño!" class="img2">
-			<a href="https://youtube.com"> </a>
+		<div title="Steak Meat Tomato Grilled Seared Rosemaryño!">
+			
+
+
 		</div>
+
+		<!--
 
 		<div class="img1_descrip">
 		<p>
@@ -70,6 +80,7 @@
 			</h4>	
 		</p>
 	</div>
+	-->
 	</div>
 
 	<!-- Contenedor de imagenes -->

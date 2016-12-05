@@ -392,6 +392,118 @@
 			return $res;
 		}
 
+
+		/*
+			Pagina de inicio
+		*/
+
+		public function getInfoInicio()
+		{
+			$sql= $this->getConexion();
+			$query  = "select titulo_inicio,slogan,logo_empresa from Contacto;";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+
+		public function updateInfoInicio($mensaje,$slogan,$logo)
+		{
+			$sql = $this->getConexion();
+			$query = "update Contacto set titulo_inicio = '".$mensaje."', slogan = '".$slogan."',logo_empresa = '".$logo."';";
+			
+			$resultado = $sql->query($query);
+			$sql->close();
+			return $resultado;
+		}
+
+		public function getPlatilloDia()
+		{
+			$sql= $this->getConexion();
+			$query  = "select e.idEspecial_del_dia,p.Nombre,e.Dia ,p.idPlatillo from Especial_del_dia e, Platillo p
+ where p.Nombre = (select Nombre from Platillo where idPlatillo = e.id_Platillo) ;";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+
+		public function getPlatilloFuertesNombres()
+		{
+			$sql= $this->getConexion();
+			$query  = "select idPlatillo,Nombre from Platillo where Tipo_Platillo = 'Fuerte';";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+
+
+		public function updateEspecial($platillo,$dia)
+		{
+			$sql= $this->getConexion();
+			$query  = "select * from Especial_del_dia;";
+			$res = $sql->query($query);
+
+
+
+			if ($res->fetch_assoc()) {
+					#update
+
+				
+				$query = "update Especial_del_dia set id_Platillo = ".$platillo." ,Dia ='".$dia."' ;";
+				$res = $sql->query($query);
+				$sql->close();
+				return $res;
+
+			}else{
+					#insert
+
+		
+				$query = "insert into Especial_del_dia values(1,".$platillo.",'".$dia."');";
+				$res = $sql->query($query);
+				$sql->close();
+				return $res;
+
+			}
+	
+		}//
+
+		public function getPlatillos()
+		{
+			$sql= $this->getConexion();
+			$query  = "select * from Platillo;";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+
+		public function getDestacados()
+		{
+			$sql= $this->getConexion();
+			$query  = " select d.idDestacados,p.Nombre
+ from Destacados d , Platillo p
+ where p.Nombre = (select Nombre from Platillo where idPlatillo = d.idPlatillo) ;";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+
+		public function insertarDestacado($id)
+		{
+			$sql= $this->getConexion();
+			$query  = "insert into Destacados(idPlatillo)values(".$id.");";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+
+		public function eliminarDestacado($id)
+		{
+			$sql= $this->getConexion();
+			$query  = "delete from Destacados where idDestacados = ".$id.";";
+			$res = $sql->query($query);
+			$sql->close();
+			return $res;
+		}
+		
 	}//class
 
 ?>

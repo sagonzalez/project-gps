@@ -1,0 +1,82 @@
+
+body{
+  background-image: url("../img/fondo2.jpg");
+  background-repeat: repeat-y;  /* Background image repite por el eje y */
+  background-attachment: fixed; /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
+  background-size: cover;  /* This is what makes the background image rescale based on the container's size */
+  background-color: #464646;  /* Set a background color that will be displayed while the background image is loading */
+  font-size: 100%;
+}
+.menu_principal{
+	/*margin-left: 100px;
+  	margin-right: 100px;
+  	margin-top: 0px;
+  	margin-bottom: 200px;*/
+  	margin: auto;
+  	border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+  	/*opacity: 0.5;*/
+
+
+  	text-align: center;
+  	color: white;
+  	font-size: xx-large;
+}
+
+a{
+  width: 230px;
+  margin: 15px;
+  font-size:large;
+  font-weight: bold;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: red;
+}
+
+.titulo{
+  background-color: black;
+  color: white;
+  margin: 15px;
+  font-size: x-large;
+}
+
+.encabezado{
+  background:rgba(0,0,0,0.5);
+  color:white;
+  margin:15px;
+}
+
+.encabezado input{
+  margin:15px;
+  width:400px;
+}
+.encabezado label{
+  margin:15px;
+}
+
+.encabezado button{
+  color:white;
+  margin:15px;
+  background:darkblue;
+  border:2px solid darkblue;
+  font-size:large;
+}
+
+.encabezado button:hover{
+  background-color:blue;
+  border:2px solid blue;
+
+}
+

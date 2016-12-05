@@ -41,7 +41,7 @@
 	<div class="opciones1">
 
 		<div>
-			<a href="index.html">Modificar Inicio</a>
+			<a href="Inicio.html">Modificar Inicio</a>
 		</div>
 		<div>
 
