@@ -30,7 +30,17 @@
 		</ul>
 	</div>
 
-	<div title="Lorem ipsum dolor sit amet" class="contenedor">
+	<?php 
+
+		require "php/conexion_datos.php";
+
+		$con = new Conect();
+		$datos = $con->getInfoContacto();
+		$desta = $con->getDestacados();
+
+	 ?>
+
+	<div class="contenedor">
 		<!--
 		<div class="img1">
 			
@@ -41,30 +51,61 @@
 			<p>
 				<h2>
 					<!--Mensaje de bienvenida de la empresa-->
-					¡Bienvenido a Bistrót!
+					<?php 
+						if ($f = $datos->fetch_assoc()) {
+							echo "<label>".$f['titulo_inicio']."</label>";	
+						}
+
+					 ?>
+					
 					<hr>
 				</h2>
 			</p>
 			<p>
 				<h3>
 					<!-- Slogan o mensaje particular-->
+					<?php 
 
-					Aquí podrás degustar nuestra gran variedad de bocadillos.<br> Un lugar ideal para disfrutar con amigos y familia :)
+						echo "<label>".$f['slogan']."</label>";
+
+					 ?>
 				</h3>
 			</p>
 		
 		</div>
 
 
-		<div>
+		<div class='logo-empresa'>
 			<!--Aqui va el logo de la empresa-->
+			<?php 
+
+				echo "<img src='".$f['logo_empresa']."'>;";
+
+			 ?>
 
 		</div>
 
 		<div class="especial_hoy">
 			<p>
-				<h2>Especial del Hoy!</h2>
+
+				<?php 
+
+					$especial = $con->getEspecial();
+
+					if ($f = $especial->fetch_assoc()) {
+						
+						echo "
+							<h2>Especial del dia ".$f['Dia']." ! <br>".$f['Nombre']."</h2>	
+						";
+					}
+
+
+
+				 ?>
+				
 			</p>
+			<img src="http://www.mycolombianrecipes.com/wp-content/uploads/2009/08/Colombian-chicharron-recipe.jpg">
+			
 		</div>
 		<div title="Steak Meat Tomato Grilled Seared Rosemaryño!">
 			
@@ -85,24 +126,29 @@
 
 	<!-- Contenedor de imagenes -->
 	<div class="slideshow-container" title="Platillos destacados">
-	    <div class="mySlides fade">
-	      <img src="https://vokrugsveta.ua/wp-content/uploads/2016/05/stack1.jpg" style="width:100%">
-	      <div class="text">Un bistecillo</div>
-	    </div>
-	    <div class="mySlides fade">
-	    	<img src="https://cookedere.files.wordpress.com/2015/07/lasagna.jpg" style="width: 100%">
-	    	<div class="text">Tocho morocho!</div>
-	    </div>
+	   
+	   <?php 
 
-	    <div class="mySlides fade">
-	      <img src="http://leisureworld.lk/upload/1417931965.jpg" style="width:100%">
-	      <div class="text">Unos sanguiches</div>
-	    </div>
 
-	    <div class="mySlides fade">
-	      <img src="https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Food.jpg" style="width:100%">
-	      <div class="text">hmmmm... papá. Me lo hecho todo! </div>
-	    </div>
+	   		while ($f = $desta->fetch_assoc()) {
+	   			echo "
+
+				
+				<div class='mySlides fade'>
+			    	<img src='".$f['Img']."' style='width: 100%'>
+			    	<div class='text'>".$f['Nombre']."</div>
+			    </div>
+
+
+
+	   		";
+	   		}
+
+
+	    ?>
+	    
+
+	   
 
 	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    <a class="next" onclick="plusSlides(1)">&#10095;</a>

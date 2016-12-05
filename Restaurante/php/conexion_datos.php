@@ -127,7 +127,43 @@
 			return $resultados;
 		}//obtenemos los registros de los platillos de postres
 
+		/*
+			
+			Index php 
+		*/
 
+		public function getInfoContacto()
+		{
+			$sql = $this->getConexion();
+			$query = "select titulo_inicio,slogan,logo_empresa from Contacto;";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+		}
+ 
+		public function getEspecial()
+		{
+			$sql = $this->getConexion();
+			$query = "select e.idEspecial_del_dia,p.Nombre,p.Descripcion,p.Img,e.Dia ,p.idPlatillo from Especial_del_dia e, Platillo p
+ where p.Nombre = (select Nombre from Platillo where idPlatillo = e.id_Platillo) ;";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+		}
+
+		public function getDestacados()
+		{
+			
+			$sql = $this->getConexion();
+			$query = "select  p.Nombre,p.Img 
+from Destacados d, Platillo p
+where p.Nombre = (select Nombre from Platillo where idPlatillo = d.idPlatillo);";
+			$resultados = $sql->query($query);
+			$sql->close();
+			return $resultados;
+
+			
+		}
 	}//class
 
 ?>

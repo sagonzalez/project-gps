@@ -25,8 +25,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Usuarios</title>
+	<title>Gestion de Usuarios</title>
 	<link rel="stylesheet" type="text/css" href="css/Usuarios.css">
+	<link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> 
 	<meta charset="utf-8">
 </head>
 <body>

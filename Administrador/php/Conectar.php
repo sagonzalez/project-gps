@@ -158,7 +158,11 @@
 		}//
 
 		public function buscarReservacion($fecha){
-			$consulta = "select * from Reservaciones where Fecha = '".$fecha."'";
+			$consulta = "
+			select r.idReservaciones,r.Nombre,r.Telefono,r.Hora,r.Fecha,r.Num_Personas,r.Email,r.Status,u.Nombre as User
+ from Reservaciones r,Usuarios u where Fecha = '".$fecha."' 
+ and u.Nombre = (select Nombre from Usuarios where idUsuarios = r.User );
+			";
 			$conectar  = $this->getConexion();
 			$resultado = $conectar->query($consulta);
 			$conectar->close();
@@ -239,9 +243,15 @@
 		{
 			$sql = $this->getConexion();
 
-			$query = "delete from Platillo where idPlatillo = ".$id.";";
+			//si eliminamos un platillo debemos eliminar el registro de las otras tablas
+			#que hagan referencia a ese platillo
+			$query1 = "delete from Destacados where idPlatillo =".$id.";";
+			$sql->query($query1);
+			$query2  = "delete from Especial_del_dia where id_Platillo = ".$id.";";
+			$sql->query($query2);
+			$query3 = "delete from Platillo where idPlatillo = ".$id.";";
 
-			$resultado = $sql->query($query);
+			$resultado = $sql->query($query3	);
 			$sql->close();
 			return $resultado;
 		}
@@ -469,7 +479,7 @@
 		public function getPlatillos()
 		{
 			$sql= $this->getConexion();
-			$query  = "select * from Platillo;";
+			$query  = "select * from Platillo where idPlatillo not in (select idPlatillo from Destacados);";
 			$res = $sql->query($query);
 			$sql->close();
 			return $res;

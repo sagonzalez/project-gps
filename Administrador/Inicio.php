@@ -1,10 +1,34 @@
+<?php
 
+	session_start();
+	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+
+	} else {
+	   header("Location: index.html");
+		 echo "<script>alert('Inicie Sesion');</script>";
+	exit();
+
+	}
+
+
+	$now = time();
+
+	if($now > $_SESSION['expire']) {
+	session_destroy();
+
+	header("Location: index.html");
+	echo "<script>alert('Su sesion ha terminado');</script>";
+	exit();
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Modficiar Inicio</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/Inicio.css">
+	<link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> 
 </head>
 <body>
 <!-- 	<div>

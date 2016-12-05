@@ -25,10 +25,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Queta's Grill and Steaks</title>
+	<title>Modificar Menú</title>
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="css/platillos_fuertes.css">
+	<link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> 
 </head>
 <body>
 <!-- 	<div>

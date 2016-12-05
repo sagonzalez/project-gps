@@ -109,6 +109,8 @@ a:hover{
 	position: absolute;	/*absolute, fixed, relative*/
 	color: white;
 }
+
+
  hr { 
  	border-top: 3px solid #ffffff;/*#4bceb4;*/ 
    	border-bottom: 2px dashed #ffffff;/*#4bceb4;*/ 
@@ -122,6 +124,14 @@ a:hover{
 	top:115px;
 	left: 830px;
 	background: rgba(200, 54, 54, 0.5)/*rgba(3,3,3,0.6)*/;
+}
+
+.especial_hoy img{
+
+	width: 400px;
+	height: 170px;
+	border:1px solid darkred;
+	border-radius: 1em;
 }
 
 .contenedor .img2{
@@ -152,6 +162,12 @@ a:hover{
 	top:235px;
 }
 
+.logo-empresa img{
+	width: 400px;
+	height: 275px;
+	border:1px solid darkred;
+	border-radius: 2em;
+}
 .contenedor_abajo{
 	margin-top: 50px;
 	width: 100%;
