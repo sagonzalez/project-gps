@@ -1,21 +1,20 @@
 body{
 	background-image: url("../img/fondo2.jpg");
+	background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-size: cover;
+    text-align: center;
 	font-size: 100%;
 }
 
 .menu-principal {
-	/*margin-left: 100px;
-  	margin-right: 100px;
-  	margin-top: 0px;
-  	margin-bottom: 200px;*/
+
   	margin: auto;
   	border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
     background: rgba(0,0,0,0.5);
-  	/*opacity: 0.5;*/
-
-
+ 
   	text-align: center;
   	color: white;
   	font-size: xx-large;
@@ -32,7 +31,7 @@ body{
     background-color: #f44336;
     color: white;
     padding: 14px 25px;
-    text-align: center;
+    /*text-align: center;*/
     text-decoration: none;
     display: inline-block;
 }
@@ -44,35 +43,74 @@ body{
 .info-user{
 	background: rgba(0,0,0,0.5);
 	margin: 15px;
-	text-align: center;
-	margin: 15px;
+	height: 250px;
+	margin-bottom: 40px;
+	overflow: relative;
 }
 
-.info-user label{
+/*.info-user label{
 	color: white;
 	font-size: large;
 
 	margin: 15px;
 	
-}
+}*/
 
-.info-user input{
+.mod_izq{
+	float: left;
+	font-size: large;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+.mod_izq label{
+	color: white;
+	font-size: x-large;
+	margin-bottom: 5px;
+}
+.mod_izq input{
+	width: 300px;
+	height: 30px;
+	font-size: large;
+	margin-bottom: 10px;
+}
+.mod_der{
+	float: right;
+	font-size: large;
+	margin-right: 120px;
+	margin-top: 10px;
+}
+.mod_der label{
+	color: white;
+	font-size: x-large;	
+}
+.mod_der input{
+	width: 300px;
+	height: 30px;
+	font-size: large;
+	margin-bottom: 10px;
+}
+/*.info-user input{
 	margin:15px;
 
-	text-align: right;
-}
+	/*text-align: right;
+}*/
 
 .info-user button {
-	font-size: large;
-	background-color: darkblue;
-	border:2px solid darkblue;
-	color: white;
-	margin: 15px;
+	margin-top: 150px;
+	background-color: #333; /* Gray */
+    border: solid black;
+    color: white;
+    width: 200px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .info-user button:hover{
-	background-color: blue;
-	border:2px solid blue;
+	background:#4CAF50;
+	cursor: pointer;
 }
 
 .nuevo-user{
@@ -85,29 +123,34 @@ body{
 .nuevo-user label{
 	color: white;
 	font-size: large;
-
 	margin: 15px;
 	
 }
 
 .nuevo-user input{
 	margin:15px;
-	width: 250px;
+	width: 300px;
+	height: 30px;
 	font-size: large;
 
 }
 
 .nuevo-user button {
-	font-size: large;
-	background-color: darkblue;
-	border:2px solid darkblue;
-	color: white;
+	background-color: #333; /* Gray */
+    border: solid black;
+    color: white;
+    width: 200px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 	margin: 15px;
 }
 
 .nuevo-user button:hover{
-	background-color: blue;
-	border:2px solid blue;
+	background: #4CAF50;
+	cursor: pointer;
 }
 
 
@@ -128,28 +171,37 @@ body{
 
 .buscar-user input{
 	margin:15px;
-	width: 250px;
+	width: 300px;
+	height: 30px;
 	font-size: large;
 
 }
 
 .buscar-user button {
-	font-size: large;
-	background-color: darkblue;
-	border:2px solid darkblue;
-	color: white;
+	background-color: #333; /* Gray */
+    border: solid black;
+    color: white;
+    width: 200px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 	margin: 15px;
 }
 
 .buscar-user button:hover{
-	background-color: blue;
-	border:2px solid blue;
+	background: #4CAF50;
+	cursor:pointer;
 }
-
-.div-titulo{
+.buscar-user select{
+	width: 300px;
+	font-size: large;
+}
+.div-titulo, .div-titulo label{
 	background-color: black;
-  color: white;
-  font-size: x-large;
+  	color: white;
+  	font-size: x-large;
 }
 
 .label-buscar{
@@ -158,11 +210,15 @@ body{
 .label-buscar label{
 	font-size: x-large;
 	color: yellow;
-
 }
-
 .campos {
 	font-size: xx-large;
 	color: white;
 	
+}
+.no_user{
+	font-size: x-large;
+	color: red;
+	/*font-weight: bold;*/
+	margin: 15px;
 }

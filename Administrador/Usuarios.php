@@ -98,15 +98,6 @@
 
 					echo "<script>alert('Nombre de usuario ya existe, escoja otro.');</script>";
 				}
-
-
-						
-
-				
-
-
-
-
 			}//
 
 			$valores = $result->fetch_assoc();
@@ -114,32 +105,35 @@
 			echo "
 
 
-					<form action='Usuarios.php' method='post'>
+				<form action='Usuarios.php' method='post'>
 					
 					<input type='hidden' name='id' value='".$valores['idUsuarios']."'> 
-					<div>
-						<label>Nombre: </label><input type='text' name='nombre' required value='".$valores['Nombre']."'>	
-					</div>
-
-					<div>
-						<label>Nombre de Usuario: </label><input type='text' name='username'  required value='".$valores['name_user']."'>
+					
+					<div class='mod_izq'>
+						<label>Nombre: </label>
+						<br>
+						<input type='text' name='nombre' required value='".$valores['Nombre']."'>	
+						<br>
+						<label>Nombre de Usuario: </label>
+						<br>
+						<input type='text' name='username'  required value='".$valores['name_user']."'>
 						<input type='hidden' name='username_ori'  value='".$valores['name_user']."'>
 					</div>
 
-					<div>
-					<label>Contraseña Actual: </label>	<input type='password' name='pass_ori' placeholder='Contraseña Actual'>
-						<label>Contraseña Nueva: </label><input type='password' name='pass_new' placeholder = 'Nueva Contraseña'>
+					<div class='mod_der'>
+						<label>Contraseña Actual: </label>	
+						<br>
+						<input type='password' name='pass_ori' placeholder='Contraseña Actual'>
+						<br>
+						<label>Contraseña Nueva: </label>
+						<br>
+						<input type='password' name='pass_new' placeholder = 'Nueva Contraseña'>
 						<input type='hidden' name='pass_actual' value = '".$valores['pass']."'>
-					</div>
-
-					<div>
-						
-						<button name='btn_1'>Aplicar Cambios</button>
+						<br>
 					</div>
 					
-
-
-					</form>
+					<button name='btn_1'>Aplicar Cambios</button>
+				</form>
 
 
 
@@ -174,25 +168,16 @@
 				}
 
 			 ?>
- 		 <form method="post" action="Usuarios.php">
-
-		     <div>
+ 		 	<form method="post" action="Usuarios.php">
+ 
 				<input type='text' name='nombre' placeholder='Nombre del Personal' required>	
-			</div>
-
-			<div>
-				<input type='text' name='username' placeholder='Nombre de Usuario' required>
-			</div>
-
-			<div>
-				<input type='password' name='password' placeholder='Inserte Contraseña' required>
-			</div>
-
-			<div>
 				
+				<input type='text' name='username' placeholder='Nombre de Usuario' required>
+				
+				<input type='password' name='password' placeholder='Inserte Contraseña' required>
+				<br>		
 				<button name="btn_2">Guardar</button>
-			</div>
-
+			
 			</form>
 	</div>
 
@@ -202,8 +187,7 @@
  		 </div>
 
  		 <form action="Usuarios.php" method="post">
- 		 	<label>Inserte nombre de Usuario: </label>
- 		 	<input type="text" name="user" required>
+ 		 	<input type="text" name="user" placeholder="Buscar" required>
  		 	<button name="btn_buscar">Buscar</button>
  		 </form>
 
@@ -329,7 +313,7 @@
 
 
 				}else{
-					echo "<label>No se encontro al usuario</label>";
+					echo "<label class='no_user'>No se encontro al usuario</label>";
 				}
 
 
