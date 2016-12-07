@@ -4,7 +4,7 @@
 	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 	} else {
-	   header("Location: index.html");
+	   header("Location: index.php");
 		 echo "<script>alert('Inicie Sesion');</script>";
 	exit();
 
@@ -16,7 +16,7 @@
 	if($now > $_SESSION['expire']) {
 	session_destroy();
 
-	header("Location: index.html");
+	header("Location: index.php");
 	echo "<script>alert('Su sesion ha terminado');</script>";
 	exit();
 

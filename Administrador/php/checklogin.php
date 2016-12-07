@@ -41,7 +41,7 @@
  		}
 
  	}else{
- 		#header("Location: ../index.html");
+ 		header("Location: ../index.html");
  		echo "Error al iniciar sesion";
  		echo "<br><a href='../index.html'>Login</a>";
  	}

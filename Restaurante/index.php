@@ -104,7 +104,17 @@
 				 ?>
 				
 			</p>
-			<img src="http://www.mycolombianrecipes.com/wp-content/uploads/2009/08/Colombian-chicharron-recipe.jpg">
+
+			<?php 
+
+				echo "
+
+					<img src='".$f['Img']."'>
+				";
+
+
+			 ?>
+			
 			
 		</div>
 		<div title="Steak Meat Tomato Grilled Seared Rosemaryño!">
@@ -135,7 +145,7 @@
 
 				
 				<div class='mySlides fade'>
-			    	<img src='".$f['Img']."' style='width: 100%'>
+			    	<img class='pic' src='".$f['Img']."' style='width: 100%'>
 			    	<div class='text'>".$f['Nombre']."</div>
 			    </div>
 

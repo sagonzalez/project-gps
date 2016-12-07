@@ -6,6 +6,11 @@
   margin: auto;
 }
 
+.pic img{
+
+  width: 767px;
+  width: 505px;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
