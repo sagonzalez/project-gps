@@ -102,7 +102,7 @@
 
 			$valores = $result->fetch_assoc();
 
-			echo "
+				echo "
 
 
 				<form action='Usuarios.php' method='post'>
@@ -138,6 +138,7 @@
 
 
 			";
+			
 
 
 
@@ -280,28 +281,37 @@
 						<div>
 						";
 
-						if($fila['status']=='A'){
+						if ($fila['Nombre']=='root') {
 							echo "
 								
 								<select name = 'status'>
 									<option value='A'>Activo</option>
-									<option value='I'>Inactivo</option>
 								</select>
 
-							";
+								";
 						}else{
+							if($fila['status']=='A'){
 							echo "
 								
 								<select name = 'status'>
-									<option value='I'>Inactivo</option>
 									<option value='A'>Activo</option>
+									<option value='I'>Inactivo</option>
 								</select>
 
-							";
-						}
-							
-						
+								";
+							}else{
+								echo "
+									
+									<select name = 'status'>
+										<option value='I'>Inactivo</option>
+										<option value='A'>Activo</option>
+									</select>
 
+								";
+							}
+						}//else
+
+						
 						echo "
 						</div>
 						<div>
