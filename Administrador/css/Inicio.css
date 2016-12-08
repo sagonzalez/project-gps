@@ -45,38 +45,70 @@ a:hover, a:active {
     background-color: red;
 }
 
-.titulo{
-  background-color: black;
-  color: white;
-  margin: 15px;
-  font-size: x-large;
-}
 
 .encabezado{
   background:rgba(0,0,0,0.5);
   color:white;
   margin:15px;
+  text-align: center;
 }
 
 .encabezado input{
   margin:15px;
   width:400px;
+  height: 30px;
+  font-size: large;
 }
 .encabezado label{
   margin:15px;
+  font-size: x-large;
+}
+.encabezado textarea{
+  margin: 15px;
+  font-size: large;
 }
 
+.titulo{
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 15px;
+  font-size: xx-large;
+}
 .encabezado button{
-  color:white;
-  margin:15px;
-  background:darkblue;
-  border:2px solid darkblue;
-  font-size:large;
+    background-color: #333; /* Gray */
+    border: solid black;
+    color: white;
+    width: 300px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.encabezado select{
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: large;
 }
 
 .encabezado button:hover{
-  background-color:blue;
-  border:2px solid blue;
-
+  background: #4CAF50;
+  cursor: pointer;
 }
-
+.valor_texto{
+  color: yellow;
+  font-weight: bold;
+}
+.destacado1 select{
+  margin-bottom: 10px;
+}
+.detacado1 button:hover{
+  background: tomato;
+  cursor: pointer;
+}
+.panel_destacados select{
+  margin-bottom: 10px;
+}

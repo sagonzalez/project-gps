@@ -80,12 +80,14 @@
 			<div>
 
 				<label>Mensaje de Bienvenida: </label>
+				<br>
 				<?php
 				 echo "<input type='text' name='mensaje'  required  value='".$fila['titulo_inicio']."'>";
 				?>
 			</div>
 			<div>
 				<label>Slogan: </label>
+				<br>
 				<?php echo 
 
 					"<textarea cols='40' rows='5' name='slogan' required>".$fila['slogan']."</textarea>";
@@ -96,6 +98,7 @@
 
 			<div>
 				<label>Logo de la Empresa: </label>
+				<br>
 				<?php echo 
 
 					"<textarea cols='40' rows='5' name='logo' required>".$fila['logo_empresa']."</textarea>";
@@ -137,6 +140,7 @@
 			 <form action="Inicio.php" method="post">
 					 <div>
 						<label>Seleccion un Dia: </label>
+						<br>
 						<select required name="dia">
 						<option value="">-Seleccione Dia-</option>
 						<option value="Lunes">Lunes</option>
@@ -147,27 +151,21 @@
 						<option value="Sabado">Sabado</option>
 						<option value="Domingo">Domingo</option>
 					</select>
-
+					<br>
 					<label>Seleccione un Platillo: </label>
-					
+						<br>
 						<select name="platillo" required>
 							<option value="">-Seleccione Platillo-</option>
 							<?php 
 								while ($fila = $dia->fetch_assoc()) {
 									echo "
-
-
 										<option value='".$fila['idPlatillo']."'>".$fila['Nombre']."</option>  
-
-
 									";
-
 								}
-
-
 							 ?>
 						</select>
-						
+						<br>
+						<br>
 						<button name='btn_2'>Guardar Especial</button>
 
 					</div>
@@ -185,7 +183,7 @@
 				echo 
 					"
 			
-						<label>".$fila['Dia']."</label>
+						<label class='valor_texto'>".$fila['Dia']."</label>
 					";
 
 				 ?>
@@ -193,17 +191,11 @@
 				<label>Platillo del día actual guardado: </label>
 
 				<?php echo 
-
 					"
-			
-						<label>".$fila['Nombre']."</label>
+						<label class='valor_texto'>".$fila['Nombre']."</label>
 					";
-
 				 ?>
-
 			</div>
-			
-
 	</div>
 
 
@@ -249,11 +241,11 @@
 
 
 			 ?>
-			<div>
+			<div class="destacado1">
 				<form action='Inicio.php' method='post'>
 				
 					<label>Lista de Destacados: </label>
-
+					<br>
 					<select name='destacados'>
 						<?php 
 
@@ -272,21 +264,22 @@
 						 ?>
 
 					</select>
-
+					<br>
 					<button name="btn_3">Quitar de Destacados</button>	
 
 				</form>
 					
 			</div>
 
-			<div>
+			<div class="panel_destacados">
 				<form action='Inicio.php' method='post'>
+					<hr>
 					<label>Agregar nuevo destacado: </label>
-
+					<br>
 					<select name="destacados" required>
 						
 						<option value=''>-Seleccione un Destacado-</option>
-
+						<br>
 						<?php 
 
 							while ($f = $reg1->fetch_assoc()) {
@@ -301,7 +294,7 @@
 
 						 ?>
 					</select>
-
+					<br>
 					<button name="btn_4">Agregar a Destacados</button>
 
 
