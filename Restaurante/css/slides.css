@@ -1,9 +1,11 @@
 /* Slideshow container */
 .slideshow-container {
 
-  max-width: 900px;
+  max-width: 835px;
+  max-height: 500px;
   position: relative;
   margin: auto;
+  margin-bottom: 70px;
 }
 
 .pic img{
