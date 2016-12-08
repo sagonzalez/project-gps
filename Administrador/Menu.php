@@ -72,7 +72,7 @@
 			    echo "
 			    <form action='php/Procesar_Menu.php' method='post'>
 			    <div class='accordion-container'>
-			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
+			        <a class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
 							<input type='hidden' name='id' value='".$fila['idPlatillo']."'>
 			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
@@ -116,7 +116,7 @@
 			    echo "
 			    <form action='php/Procesar_Menu.php' method='post'>
 			    <div class='accordion-container'>
-			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
+			        <a  class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
 								<input type='hidden' name='id' value='".$fila['idPlatillo']."'>
 			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
@@ -161,7 +161,7 @@
 			    echo "
 			    <form action='php/Procesar_Menu.php' method='post'>
 			    <div class='accordion-container'>
-			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
+			        <a  class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
 							<input type='hidden' name='id' value='".$fila['idPlatillo']."'>
 			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
@@ -205,7 +205,7 @@
 			    echo "
 			    <form action='php/Procesar_Menu.php' method='post'>
 			    <div class='accordion-container'>
-			        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
+			        <a  class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
 			        <div class='accordion-content'>
 			        	<label>Nombre: </label><input type='text' name='nombre' value='".$fila['Nombre']."' required ><br>
 								<input type='hidden' name='id' value='".$fila['idBebidas']."'>

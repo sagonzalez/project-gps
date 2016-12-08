@@ -38,7 +38,7 @@ CREATE TABLE `Bebidas` (
 
 LOCK TABLES `Bebidas` WRITE;
 /*!40000 ALTER TABLE `Bebidas` DISABLE KEYS */;
-INSERT INTO `Bebidas` VALUES (2,'Mojito Cubano','Bebida preparada a base de ron, lima, menta y otros ingredientes que se pueden añadir adicionalmente...\n',45.12,'http://cdn2.recetasgratis.net/es/images/1/5/3/img_mojito_cubano_original_43351_600_square.jpg'),(3,'Caipirinha','Rico coctel de Brasil, consistente en cachaza, lima, azucar y hielo....',35.19,'http://www.vinoybebidas.com/home/images/stories/caipirinha-8386.jpg'),(4,'Vino Tinto','Vino de color rojo oscuro que se obtiene del mosto de uva negra fermentado con las pepitas y los hollejos de la uva pregunta por nuestra cosecha....',55.1,'http://static.vix.com/es/sites/default/files/styles/large/public/imj/p/propiedades-curativas-del-vino-tinto-1.jpg?itok=M5Mf28MC'),(5,'Vino Blanco','Delicioso vino blanco para acompañar tus platillos, pregunta por la cosecha de la casa...',48.12,'http://bloggraficasvarias.es/wp-content/uploads/2016/01/9281552_l.jpg'),(6,'Agua Cabonatada (Sodas)','Pregunta por nuestros distintos sabores',23.12,'http://img-aws.ehowcdn.com/300x200/photos.demandstudios.com/getty/article/83/119/181397947_XS.jpg'),(7,'Agua Natural y Sabor','Pregunta por los sabores que tenemos...',18.62,'https://milittlecorner.files.wordpress.com/2014/09/0d2bca5618309bc9806b34e5c07f5b9e.jpg'),(9,'ada','ada',3.29,'http://abdomensixpack.com/wp-content/uploads/2014/10/Malteadas-para-bajar-de-peso-con-frutas.jpg');
+INSERT INTO `Bebidas` VALUES (2,'Mojito Cubano','Bebida preparada a base de ron, lima, menta y otros ingredientes que se pueden aÃ±adir adicionalmente...\r\n',45.12,'http://cdn2.recetasgratis.net/es/images/1/5/3/img_mojito_cubano_original_43351_600_square.jpg'),(3,'Caipirinha','Rico coctel de Brasil, consistente en cachaza, lima, azucar y hielo....',35.19,'http://www.vinoybebidas.com/home/images/stories/caipirinha-8386.jpg'),(4,'Vino Tinto','Vino de color rojo oscuro que se obtiene del mosto de uva negra fermentado con las pepitas y los hollejos de la uva pregunta por nuestra cosecha....',55.1,'http://static.vix.com/es/sites/default/files/styles/large/public/imj/p/propiedades-curativas-del-vino-tinto-1.jpg?itok=M5Mf28MC'),(5,'Vino Blanco','Delicioso vino blanco para acompaÃ±ar tus platillos, pregunta por la cosecha de la casa...',48.12,'http://bloggraficasvarias.es/wp-content/uploads/2016/01/9281552_l.jpg'),(6,'Agua Cabonatada (Sodas)','Pregunta por nuestros distintos sabores',23.12,'http://img-aws.ehowcdn.com/300x200/photos.demandstudios.com/getty/article/83/119/181397947_XS.jpg'),(7,'Agua Natural y Sabor','Pregunta por los sabores que tenemos...',18.62,'https://milittlecorner.files.wordpress.com/2014/09/0d2bca5618309bc9806b34e5c07f5b9e.jpg');
 /*!40000 ALTER TABLE `Bebidas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +54,7 @@ CREATE TABLE `Comentarios` (
   `Nombre_Per` varchar(45) DEFAULT NULL,
   `Comentario` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`idComentarios`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,7 +96,7 @@ CREATE TABLE `Contacto` (
 
 LOCK TABLES `Contacto` WRITE;
 /*!40000 ALTER TABLE `Contacto` DISABLE KEYS */;
-INSERT INTO `Contacto` VALUES (1,'Restaurant  GPS',2142029,2130938,'quetas@gmail.com','Emiliano Zapata Ore. 92, Centro, Tepic Nayarit','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.953711217395!2d-104.89277705029835!3d21.509532976499067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737381fb3daa3%3A0x471d19d40fabc82d!2sRestaurant+Emiliano!5e0!3m2!1ses!2smx!4v1478738196452','9:00 - 10:00 pm','Bienvenidos a mi Restaurant!','Una combinacion de carnes y cortes para tu paladar.','http://webneel.com/sites/default/files/images/manual/logo-restaurant/best-restaurant-logo-design%20(3).gif');
+INSERT INTO `Contacto` VALUES (1,'Restaurant  GPS',2142029,2130938,'quetas@gmail.com','Emiliano Zapata Ore. 92, Centro, Tepic Nayarit','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.953711217395!2d-104.89277705029835!3d21.509532976499067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737381fb3daa3%3A0x471d19d40fabc82d!2sRestaurant+Emiliano!5e0!3m2!1ses!2smx!4v1478738196452','9:00 - 10:00 pm','Bienvenidos a mi Restaurant!','Una combinacion de carnes y cortes para tu paladar.','http://capettos.com/wp-content/uploads/2016/06/CHICKEN-WINGS-LOGO-PNG.png');
 /*!40000 ALTER TABLE `Contacto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,7 +152,7 @@ CREATE TABLE `Especial_del_dia` (
 
 LOCK TABLES `Especial_del_dia` WRITE;
 /*!40000 ALTER TABLE `Especial_del_dia` DISABLE KEYS */;
-INSERT INTO `Especial_del_dia` VALUES (1,10,'Sabado');
+INSERT INTO `Especial_del_dia` VALUES (1,8,'Martes');
 /*!40000 ALTER TABLE `Especial_del_dia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -199,7 +199,7 @@ CREATE TABLE `Platillo` (
   `Tipo_Platillo` varchar(50) DEFAULT NULL,
   `Img` varchar(10000) DEFAULT NULL,
   PRIMARY KEY (`idPlatillo`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -208,7 +208,7 @@ CREATE TABLE `Platillo` (
 
 LOCK TABLES `Platillo` WRITE;
 /*!40000 ALTER TABLE `Platillo` DISABLE KEYS */;
-INSERT INTO `Platillo` VALUES (2,'Calabacitas Diana','Calabacitas de cosecha tierna sazonadas con crema acompaï¿½adas de pasta...',NULL,48.82,'Entrada','http://mxcdn.ar-cdn.com/recipes/originalxl/70cb885b-8dda-4d05-8cfc-4135a7d9291b.jpg'),(3,'Pay de Atun','Rico pay casero hecho con los mejores ingredientes que se encuentran en la region...',NULL,27.5,'Entrada','http://mxcdn.ar-cdn.com/recipes/originalxl/de158c9e-f1f8-4a67-a519-097f20ae09d3.jpg'),(4,'Ensalada Tricolor','Rebanadas de aguacate, queso mozzarella fresco y jitomate, aderezadas con aceite de oliva y vinagre balsámico.',NULL,56.82,'Entrada','http://mxcdn.ar-cdn.com/recipes/originalxl/9b8551dc-32e4-48f9-b9a7-3ac545212b0c.jpg'),(5,'Molletes Mexicanos','Deliciosos molletes acompañados de chorizo casero, salsa picada y acompañados de aguacate.',NULL,52.93,'Entrada','https://3.bp.blogspot.com/-ItMvy2Fz5SI/Vyqu6MxEhKI/AAAAAAAARrg/DAnoJV_xJU0Rakkw76-q-diCBsLwDCpqQCLcB/s640/Molletes%2Brecipes.jpg'),(8,'Albondigas en Chipotle','Albï¿½ndigas preparadas con la mejor carne, sazonadas y acompaï¿½adas con la mejor receta de la casa...','Acompaï¿½a tu platillo con un agua carbonatada o si lo prefieres una soda...',85.28,'Fuerte','http://mxcdn.ar-cdn.com/recipes/originalxl/0f176260-a51e-4e93-922a-7266977be703.jpg'),(9,'Medallones sellados en sartén','Ricos medallones de res sellados al sartén Medallones sellados en sartén con salsa de oporto simple.','Acompaña tu platillo con una buena copa de vino tinto...',89.41,'Fuerte','http://saboresdecanada.mx/images/Pan_seared_medallions_category_thumbnail.jpg'),(10,'Salmón a la parrilla','Salmón a la parrilla en costra de cilantro, con salteado otoñal de chícharos mixtos preparado con la mejor receta...','Acompañalo con una copa de ino blanco o bien elige alguna de nuestra bebidas preparadas...',98.12,'Fuerte','http://saboresdecanada.mx/images/Grilled_salmon_with_coriander_category_thumbnail.jpg'),(12,'Flan Napolitano','Flan cocinado a baño María dentro del horno tiene un sabor exquisito y una textura firme, pero muy delicada.',NULL,33.98,'Postre','http://mxcdn.ar-cdn.com/recipes/originalxl/b8d297d8-37d9-4c6f-b036-be817dc9be65.jpg'),(13,'Arroz con Leche','Delicioso arroz preparado con leche, endulzado y con un toque de canela espolvoreada en su exterior...',NULL,28.12,'Postre','http://mxcdn.ar-cdn.com/recipes/originalxl/69c10b1b-ef89-4738-95bd-064151e45d81.jpg'),(14,'Helado Choco','Delicioso helado acompaï¿½ado con cubierta de chocolate y frutas rojas, pregunta por los sabores...',NULL,44.99,'Postre','http://cdn2.uvnimg.com/dims4/default/b1760d7/2147483647/resize/956x717%3E/quality/75/?url=http%3A%2F%2Fcdn3.uvnimg.com%2Ffc%2Fd5%2Fe7a893b0483ebc6f98350e50d61f%2F9ebe155a2a23423c8267223300e6b285'),(15,'Banana Split','Rica banana acompañada de helado sabor vainilla, chocolate y nuez...',NULL,65.41,'Postre','http://img.loquenosabias.com/postres/2011/09/02/banana-split-postre-estadounidense.jpg'),(18,'Chilaquiles','ricos chilaquiles',NULL,12313,'Entrada','http://www.schallerweber.com/cms/wp-content/uploads/2012/02/GooseLiver.jpg');
+INSERT INTO `Platillo` VALUES (2,'Calabacitas Diana','Calabacitas de cosecha tierna sazonadas con crema acompaÃ±adas de pasta...',NULL,48.82,'Entrada','http://mxcdn.ar-cdn.com/recipes/originalxl/70cb885b-8dda-4d05-8cfc-4135a7d9291b.jpg'),(3,'Pay de Atun','Rico pay casero hecho con los mejores ingredientes que se encuentran en la region...',NULL,27.5,'Entrada','http://mxcdn.ar-cdn.com/recipes/originalxl/de158c9e-f1f8-4a67-a519-097f20ae09d3.jpg'),(4,'Ensalada Tricolor','Rebanadas de aguacate, queso mozzarella fresco y jitomate, aderezadas con aceite de oliva y vinagre ',NULL,56.82,'Entrada','http://mxcdn.ar-cdn.com/recipes/originalxl/9b8551dc-32e4-48f9-b9a7-3ac545212b0c.jpg'),(5,'Molletes Mexicanos','Deliciosos molletes acompaÃ±ados de chorizo casero, salsa picada y acompaÃ±ados de aguacate.',NULL,52.93,'Entrada','https://3.bp.blogspot.com/-ItMvy2Fz5SI/Vyqu6MxEhKI/AAAAAAAARrg/DAnoJV_xJU0Rakkw76-q-diCBsLwDCpqQCLcB/s640/Molletes%2Brecipes.jpg'),(8,'Albondigas en Chipotle','AlbÃ³ndigas preparadas con la mejor carne, sazonadas y acompaÃ±adas con la mejor receta de la casa...','AcompaÃ±a tu platillo con un agua carbonatada o si lo prefieres una soda...',85.28,'Fuerte','https://mejorconsalud.com/wp-content/uploads/2015/03/albondigas-de-pan-500x334.jpg'),(9,'Medallones sellados en sartÃ³n','Ricos medallones de res sellados al sartï¿½n Medallones sellados en sartï¿½n con salsa de oporto simple.','Acompaï¿½a tu platillo con una buena copa de vino tinto...',89.41,'Fuerte','http://saboresdecanada.mx/images/Pan_seared_medallions_category_thumbnail.jpg'),(10,'SalmÃ³n a la parrilla','SalmÃ³n a la parrilla en costra de cilantro, con salteado otoÃ±al de chÃ­charos mixtos preparado con la mejor receta...','AcompaÃ±alo con una copa de ino blanco o bien elige alguna de nuestra bebidas preparadas...',98.12,'Fuerte','http://saboresdecanada.mx/images/Grilled_salmon_with_coriander_category_thumbnail.jpg'),(12,'Flan Napolitano','Flan cocinado a baÃ±o MarÃ­a dentro del horno tiene un sabor exquisito y una textura firme, pero muy delicada.',NULL,33.98,'Postre','http://mxcdn.ar-cdn.com/recipes/originalxl/b8d297d8-37d9-4c6f-b036-be817dc9be65.jpg'),(13,'Arroz con Leche','Delicioso arroz preparado con leche, endulzado y con un toque de canela espolvoreada en su exterior...',NULL,28.12,'Postre','http://mxcdn.ar-cdn.com/recipes/originalxl/69c10b1b-ef89-4738-95bd-064151e45d81.jpg'),(14,'Helado Choco','Delicioso helado acompaÃ±ado con cubierta de chocolate y frutas rojas, pregunta por los sabores...',NULL,44.99,'Postre','http://cdn2.uvnimg.com/dims4/default/b1760d7/2147483647/resize/956x717%3E/quality/75/?url=http%3A%2F%2Fcdn3.uvnimg.com%2Ffc%2Fd5%2Fe7a893b0483ebc6f98350e50d61f%2F9ebe155a2a23423c8267223300e6b285'),(15,'Banana Split','Rica banana acompaÃ±ada de helado sabor vainilla, chocolate y nuez...',NULL,65.41,'Postre','http://img.loquenosabias.com/postres/2011/09/02/banana-split-postre-estadounidense.jpg'),(18,'Chilaquiles','ricos chilaquiles',NULL,12313,'Entrada','http://www.schallerweber.com/cms/wp-content/uploads/2012/02/GooseLiver.jpg'),(19,'Pizza de Peperoni','Mucha delicias comunicaciÃ³n ',NULL,23,'Entrada','http://puntofinal.mx/wp-content/uploads/2016/08/ppizza.jpg');
 /*!40000 ALTER TABLE `Platillo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -281,4 +281,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-12-08 13:36:39
+-- Dump completed on 2016-12-08 15:58:45

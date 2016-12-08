@@ -41,7 +41,7 @@
     echo "
 
     <div class='accordion-container'>
-        <a href='#' class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
+        <a class='accordion-titulo'>".$fila['Nombre']."<span class='toggle-icon'></span></a>
         <div class='accordion-content'>
             <img src='".$fila['Img']."' alt=''/>
                <br>
