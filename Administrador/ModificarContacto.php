@@ -109,9 +109,9 @@
 
 	</div>
 
-<!-- <div class="atras">
+<div class="atras">
 	<a href="administrador.php">Regresar</a>
-</div> -->
+</div> 
 
 </body>
 </html>

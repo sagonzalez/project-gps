@@ -305,7 +305,9 @@
 
 		</div>
 			
-	
+	<div class="atras">
+			<a href="administrador.php">Regresar</a>
+	</div>
 
 </body>
 </html>

@@ -114,7 +114,7 @@ a:hover, a:active {
 }
 
 
-/*.atras{
+.atras{
   margin:15px;
   text-align: left;
 }
@@ -139,4 +139,3 @@ a:hover, a:active {
 .atras a:hover,.atras a:active {
     background-color: red;
 }
-*/

@@ -112,3 +112,29 @@ a:hover, a:active {
 .panel_destacados select{
   margin-bottom: 10px;
 }
+
+.atras{
+  margin:15px;
+
+}
+.atras a{
+  width: 230px;
+  margin: 15px;
+  padding: 5px;
+  font-size:large;
+  font-weight: bold;
+}
+
+.atras a:link,.atras a:visited {
+    background-color: black;
+    color: white;
+
+    /*padding: 14px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.atras a:hover,.atras a:active {
+    background-color: red;
+}
