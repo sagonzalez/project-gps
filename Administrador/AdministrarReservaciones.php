@@ -282,9 +282,11 @@
 										";
 									}
 
+									echo "</div>"; //new line
+
 								}//while 1
 						}//if secundario
-						else{
+						else{ 	
 							while ($fila = $buscador->fetch_assoc()) {
 								echo
 								"
@@ -372,6 +374,8 @@
 										</div>
 									";
 								}
+
+								echo "</div>"; //new line
 
 							}//while 2
 						}
