@@ -134,9 +134,9 @@
 		{
 			$consulta = "
 
-							select r.Nombre,r.Telefono,r.Hora,r.Fecha,r.Num_Personas,r.Email,r.Status,u.Nombre
-				from Reservaciones r,Usuarios u
-				where r.Fecha = date(now()) and r.Status = 1 and r.user = (select idUsuarios from Usuarios where idUsuarios = r.User  );
+							select r.idReservaciones,r.Nombre,r.Telefono,r.Hora,r.Fecha,r.Num_Personas,r.Email,r.Status,u.Nombre as User
+from Reservaciones r,Usuarios u
+where r.Fecha = date(now()) and r.Status = 1 and u.Nombre = (select Nombre from Usuarios where idUsuarios = r.User  );
 
 			";
 

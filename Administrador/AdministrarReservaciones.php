@@ -246,6 +246,7 @@
 									";
 									if ($fila['Status'] == 0) {
 										echo "
+										<div>
 										<label>Estado de la reservacion: Sin Asignar</label>
 										</div>
 										<div>
@@ -255,6 +256,7 @@
 										";
 									}elseif ($fila['Status']==1) {
 										echo "
+										<div>
 										<label>Estado de la reservacion: Aceptada</label>
 										</div>
 										<div>
@@ -264,6 +266,7 @@
 										";
 									}elseif ($fila['Status']==2) {
 										echo "
+										<div>
 										<label>Estado de la reservacion: Rechazada</label>
 										</div>
 										<div>
@@ -273,6 +276,7 @@
 										";
 									}elseif ($fila['Status']==3) {
 										echo "
+										<div>
 										<label>Estado de la reservacion: Cancelada</label>
 										</div>
 										<div>
@@ -318,6 +322,7 @@
 								";
 								if ($fila['Status'] == 0) {
 									echo "
+									<div>
 									<label>Estado de la reservacion: Aceptada </label>
 									</div>
 									<div>
@@ -330,6 +335,7 @@
 									";
 								}elseif ($fila['Status']==1) {
 									echo "
+									<div>
 									<label>Estado de la reservacion: Aceptada Cambiar: </label>  <select required name='status_solicitud'>
 												<option value=''>-Seleccione-</option>
 												<option value='Cancelar'>Cancelar</option>
@@ -349,6 +355,7 @@
 									";
 								}elseif ($fila['Status']==2) {
 									echo "
+									<div>
 									<label>Estado de la reservacion: Rechazada </label>
 									</div>
 									<div>
@@ -362,6 +369,7 @@
 									";
 								}elseif ($fila['Status']==3) {
 									echo "
+									<div>
 									<label>Estado de la reservacion: Cancelada </label>
 									</div>
 									<div>
@@ -383,6 +391,7 @@
 
 
 				}//if
+
 
 
 			 ?>
