@@ -37,7 +37,8 @@
 
 		$con = new Conectar();
 
-		$result = $con->getUser("ibalop");
+		$usuario = $_SESSION['username']; 
+		$result = $con->getUser($usuario);
 
 		
 
