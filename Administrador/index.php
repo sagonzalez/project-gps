@@ -90,7 +90,7 @@
             <label class="olvidar_contraseña" onclick="olvidar()">Olvidaste tu contraseña?</label>
             <script type="text/javascript">
                 function olvidar(){
-                    alert("no se la voy a decir compa!");
+                    alert("Consulte con el adminsitrador");
                 }
             </script>
         </div>
